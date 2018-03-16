@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="南京信息工程大学 擅长前端，热爱研究移动端开发与前端性能"><title>个人简历 | 超元气Zeroの札记</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">个人简历</h1><a id="logo" href="/.">超元气Zeroの札记</a><p class="description">一个集美貌与才华于一身的程序媛</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">个人简历</h1><div class="post-meta">Mar 1, 2018</div><div class="post-content"><p> 主要记录自己在乐伏做过的项目</p>
+<a id="more"></a> 
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center">刘超</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">程序媛</td>
+</tr>
+<tr>
+<td style="text-align:center">学历</td>
+<td style="text-align:center">本科</td>
+<td style="text-align:center">专业</td>
+<td style="text-align:center">电子信息工程</td>
+</tr>
+<tr>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center"><a href="mailto:2820501417@qq.com" target="_blank" rel="noopener">2820501417@qq.com</a></td>
+<td style="text-align:center">个人博客</td>
+<td style="text-align:center"><a href="https://liuchao0704.github.io/">https://liuchao0704.github.io/</a></td>
+</tr>
+</tbody>
+</table>
+<p>无锡乐伏网络科技有限公司是中国领先的光伏能源设备监控与运维解决方案提供商。有幸在公司成立之初就加入，从初代产品研发到后续产品的不断迭代，从PC端到移动端，产品线逐渐丰富的同时，客户体验也日臻完善。在项目开发中我经历了不断创新、不断思考和总结。</p>
+<h4 id="PC端-乐伏电站监控系统"><a href="#PC端-乐伏电站监控系统" class="headerlink" title="[PC端]乐伏电站监控系统"></a>[PC端]乐伏电站监控系统</h4><h4 id="2016-11-2017-1"><a href="#2016-11-2017-1" class="headerlink" title="2016.11 - 2017.1"></a>2016.11 - 2017.1</h4><h4 id="angular-1-x-bootstrap-windows"><a href="#angular-1-x-bootstrap-windows" class="headerlink" title="angular 1.x + bootstrap + windows"></a>angular 1.x + bootstrap + windows</h4><p>乐伏监控系统主要的两大功能分为设备展示和设备绑定 。</p>
+<h5 id="展示模块"><a href="#展示模块" class="headerlink" title="展示模块"></a>展示模块</h5><ul>
+<li>电站/设备列表展示</li>
+<li>电站/设备的状态、发电量、收益、效率、环保信息概览信息</li>
+<li>电站/设备 发电量、功率 日/月/年/总/图表展示</li>
+<li>电站/设备 告警、错误信息展示统计</li>
+</ul>
+<h5 id="添加模块"><a href="#添加模块" class="headerlink" title="添加模块"></a>添加模块</h5><ul>
+<li>添加电站</li>
+<li>添加设备</li>
+</ul>
+<p>angularJS 负责数据双向绑定</p>
+<ul>
+<li>ui-router + animate.css 负责SPA(单页面应用)路由切换以及切换效果</li>
+<li>ng-repeat  列表的分页渲染</li>
+<li>angular 内置form validate 配合正则表达式验证表单（用户注册/登录/电站个添加/设备添加）</li>
+</ul>
+<p>bootstrap datepicker + highchart  图表展示</p>
+<ul>
+<li>bootstrap datepicker 支持单日期的自由选择以及任意 时间段选择 </li>
+<li>highchart插件中的柱状图、折线图、 饼状图 、仪表图等形式 为电站/设备发电量、功率等数据展示提供了直观的视觉效果。</li>
+</ul>
+<p>Bootstrap </p>
+<ul>
+<li>Boostrap 栅格系统快速搭建后台管理系统页面</li>
+</ul>
+<h4 id="移动端-乐伏监控app"><a href="#移动端-乐伏监控app" class="headerlink" title="[移动端] 乐伏监控app"></a>[移动端] 乐伏监控app</h4><h4 id="2017-1-2017-2"><a href="#2017-1-2017-2" class="headerlink" title="2017.1-2017.2"></a>2017.1-2017.2</h4><h4 id="jquery-css-android-ios"><a href="#jquery-css-android-ios" class="headerlink" title="jquery + css +android / ios"></a>jquery + css +android / ios</h4><p>乐伏监控app是运行在移动端的电站监控程序</p>
+<ul>
+<li>简单的页面切换</li>
+<li>保留提取PC端重要的电站/设备信息展示</li>
+<li>jquery + 原生js做数据绑定和下拉加载数据</li>
+<li>mobiscroll 移动端datepicker插件</li>
+</ul>
+<p>乐伏监控app也是我做的第一个app也遇到一些实际问题</p>
+<ul>
+<li>静态页面打包在客户端本地无法使用ajax获取数据 </li>
+<li>rem适配页面会有一瞬间的缩小和放大</li>
+</ul>
+<p>针对以上问题我做个了总结<a href="https://liuchao0704.github.io/2017/07/07/angularApp/">angular1开发webApp</a></p>
+<p>乐伏监控app当然也存在一些问题</p>
+<ul>
+<li>页面切换不够自然比较生硬（不是SPA无法做到路由切换只是单纯的html页面切换）</li>
+<li>数据绑定方面例如电站列表使用原生js字符串拼接循环输出比较繁琐</li>
+<li>版本不好维护 android 和 ios 和 web 一共三个版本 费时费力</li>
+</ul>
+<p>针对以上问题我在做第二个app 即运维app时候做了突破性改变</p>
+<h4 id="PC端-乐伏电站设计系统"><a href="#PC端-乐伏电站设计系统" class="headerlink" title="[PC端] 乐伏电站设计系统"></a>[PC端] 乐伏电站设计系统</h4><h4 id="2017-3-2017-4"><a href="#2017-3-2017-4" class="headerlink" title="2017.3 - 2017.4"></a>2017.3 - 2017.4</h4><h4 id="angular-1-x-bootstrap-windows-1"><a href="#angular-1-x-bootstrap-windows-1" class="headerlink" title="angular 1.x + bootstrap + windows"></a>angular 1.x + bootstrap + windows</h4><p>乐伏电站设计系统是一个实用的电站设计平台，方便用户进行电站预估计算及设备选型。用户不需要专业，系统会帮助用户进行一键式计算和选型匹配，使电站获得最佳的收益。</p>
+<ul>
+<li>高德地图支持用户快速自定义电站位置 </li>
+<li>获取该地理位置的辐照量和最佳倾斜角</li>
+<li>用户自定义组件方案设计</li>
+<li>打印自定义方案</li>
+</ul>
+<p>angularJS 负责数据部分</p>
+<ul>
+<li>$broadcast 父级向子级广播事件控制路由跳转防止未保存当前步骤就跳转下一步</li>
+<li>$watch 监听更新数据实时更新用户自定义设计方案并评估</li>
+<li>bootstrap ui- carousel 循环输出用户的设计方案报告</li>
+</ul>
+<h4 id="PC端-乐伏运维系统"><a href="#PC端-乐伏运维系统" class="headerlink" title="[PC端]乐伏运维系统"></a>[PC端]乐伏运维系统</h4><h4 id="2017-6-2017-7"><a href="#2017-6-2017-7" class="headerlink" title="2017.6 - 2017.7"></a>2017.6 - 2017.7</h4><h4 id="angular-1-x-bootstrap-windows-2"><a href="#angular-1-x-bootstrap-windows-2" class="headerlink" title="angular 1.x + bootstrap + windows"></a>angular 1.x + bootstrap + windows</h4><p>乐伏电站运维平台是基于对用户需求分析，以及目前市场上电站运维存在的一些问题而开发出来的。从我国光伏产业分布来看光伏产业的发展，随着光伏政策，地域经济等多方面的影响，由原来的大型地面的集中式光伏电站， 逐渐转移到分布式光伏电站，而光伏电站运维就直接决定了投资者的收益率，乐伏运维平台将投资者和集成商紧密的联系到一起。便于及时解决电站的故障及其他问题。</p>
+<ul>
+<li>不同用户角色不同权限的页面展示</li>
+<li>集成简易的物料管理系统</li>
+<li>运单不同状态下的可操作流程、功能</li>
+</ul>
+<h4 id="移动端-乐伏运维app"><a href="#移动端-乐伏运维app" class="headerlink" title="[移动端] 乐伏运维app"></a>[移动端] 乐伏运维app</h4><h4 id="2017-8-2017-9"><a href="#2017-8-2017-9" class="headerlink" title="2017.8-2017.9"></a>2017.8-2017.9</h4><h4 id="angular-1-x-android-ios"><a href="#angular-1-x-android-ios" class="headerlink" title="angular 1.x +android / ios"></a>angular 1.x +android / ios</h4><p>乐伏运维app是运行在移动端的电站运维系统，目的方便终端用户及时上报告警记录，运维人员及时接单运维。针对第一版的乐伏监控app 的一些问题。我决定将此app做成webApp。angular1.x框架满足了app的路由切换和多角色分配。数据双向绑定也为app开发带来了便利，此app基本沿用PC端的开发思路。</p>
+<ul>
+<li>采用ajax与后台交互数据</li>
+<li>版本合一 android 和 ios 使用一个版本 不需要维护多版本</li>
+<li>路由切换更加自然 更接近原生app</li>
+</ul>
+<h4 id="移动端-乐伏管家app"><a href="#移动端-乐伏管家app" class="headerlink" title="[移动端] 乐伏管家app"></a>[移动端] 乐伏管家app</h4><h4 id="2017-12-2018-3"><a href="#2017-12-2018-3" class="headerlink" title="2017.12-2018.3"></a>2017.12-2018.3</h4><h4 id="angular-1-x-android-ios-1"><a href="#angular-1-x-android-ios-1" class="headerlink" title="angular 1.x +android / ios"></a>angular 1.x +android / ios</h4><p>乐伏管家app是我独立做的第三个app，这是一个将监控app和运维app重新整合的app。针对老版本的app操作以及数据显示方面等问题。我和产品经理做了全新的界面设计。亮点如下</p>
+<ul>
+<li>全新的个性化界面设置 根据电站的天气情况，首页新增晴天/阴天/多云/雨/雪/夜间模式并动态更新页面，带来不一样的视觉体验</li>
+<li>使用better-srcoll插件为移动端带来更流畅的滑屏体验 （主要应用于超长页面 和 下拉加载数据）</li>
+</ul>
+<p>视觉层面做了不少优化目的是更加接近原生app。在看不见的地方，数据存储以及管理方面我也做了优化。angular 1.x没有类似vuex 数据管理。我利用angular 1.x 的<code>$rootscope</code>作为简易版本的数据管理，在<code>$rootscope</code>创建对象存储多次复用并且需要实时更新的数据。</p>
+</div><div class="tags"><a href="/tags/简历/">简历</a></div><div class="post-nav"><a class="next" href="/2018/02/01/reg/">常用正则表达式整理</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/gulp/" style="font-size: 15px;">gulp</a> <a href="/tags/angular/" style="font-size: 15px;">angular</a> <a href="/tags/css3/" style="font-size: 15px;">css3</a> <a href="/tags/cookie/" style="font-size: 15px;">cookie</a> <a href="/tags/js/" style="font-size: 15px;">js</a> <a href="/tags/date/" style="font-size: 15px;">date</a> <a href="/tags/array/" style="font-size: 15px;">array</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/webApp/" style="font-size: 15px;">webApp</a> <a href="/tags/生活/" style="font-size: 15px;">生活</a> <a href="/tags/checkbox/" style="font-size: 15px;">checkbox</a> <a href="/tags/对象/" style="font-size: 15px;">对象</a> <a href="/tags/简历/" style="font-size: 15px;">简历</a> <a href="/tags/form/" style="font-size: 15px;">form</a> <a href="/tags/vue/" style="font-size: 15px;">vue</a> <a href="/tags/reg/" style="font-size: 15px;">reg</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/01/resume/">个人简历</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/01/reg/">常用正则表达式整理</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/28/jsArray/">学以致用系列之js array</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/31/js/">js 基本类型学习总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/16/css3/">css3总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/07/angularApp/">angular1开发webApp | 持续更新</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/01/vueApp/">Vue 开发 SPA</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/17/broadcast/">Angular $on、$emit、$broadcast 事件传播时机分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/23/datepicker/">Select与Datepicker插件控制日期</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/multiselect/">Angular JS动态控制多选框全选与全不选并且打印选中的值</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">超元气Zeroの札记.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
