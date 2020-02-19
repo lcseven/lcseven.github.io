@@ -2,191 +2,247 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://liuchao0704.github.io/2018/05/06/cssworld02/</loc>
-    
-    <lastmod>2018-12-07T13:26:12.177Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/09/15/you-dont-know-js-middle2/</loc>
-    
-    <lastmod>2018-11-23T00:47:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/03/02/test/</loc>
-    
-    <lastmod>2018-11-22T13:05:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/03/01/resume/</loc>
-    
-    <lastmod>2018-11-19T01:23:19.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/11/15/cssworld04/</loc>
-    
-    <lastmod>2018-11-16T07:51:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2017/07/07/angularApp/</loc>
-    
-    <lastmod>2018-11-16T07:36:41.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/04/16/css3/</loc>
-    
-    <lastmod>2018-11-15T11:41:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/05/07/cssworld03/</loc>
-    
-    <lastmod>2018-11-14T01:50:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/02/01/reg/</loc>
-    
-    <lastmod>2018-11-14T01:34:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2017/04/23/datepicker/</loc>
-    
-    <lastmod>2018-11-14T01:30:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2017/02/28/form/</loc>
-    
-    <lastmod>2018-11-14T01:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2017/04/10/multiselect/</loc>
-    
-    <lastmod>2018-11-14T01:21:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2017/02/12/gulpAuto/</loc>
-    
-    <lastmod>2018-11-14T01:20:58.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://liuchao0704.github.io/2017/02/15/cookie/</loc>
     
-    <lastmod>2018-11-14T01:20:58.000Z</lastmod>
+    <lastmod>2020-02-19T06:49:38.739Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://liuchao0704.github.io/2018/01/06/stickyfooter/</loc>
+    <loc>https://liuchao0704.github.io/2018/05/06/cssworld-width/</loc>
     
-    <lastmod>2018-11-14T01:18:45.000Z</lastmod>
+    <lastmod>2020-02-19T06:49:21.510Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2020/02/10/float/</loc>
+    
+    <lastmod>2020-02-19T06:49:09.833Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2019/04/05/hdnj-sw01/</loc>
+    
+    <lastmod>2020-02-19T06:48:59.578Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://liuchao0704.github.io/2017/01/31/hexo-github/</loc>
     
-    <lastmod>2018-11-14T01:18:45.000Z</lastmod>
+    <lastmod>2020-02-19T06:48:53.617Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://liuchao0704.github.io/2018/05/06/cssworld01/</loc>
+    <loc>https://liuchao0704.github.io/2019/01/01/nodejs/</loc>
     
-    <lastmod>2018-11-14T01:18:45.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2017/03/29/direction/</loc>
-    
-    <lastmod>2018-11-13T13:36:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/10/07/you-dont-know-js-first1/</loc>
-    
-    <lastmod>2018-10-07T13:44:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/09/20/you-dont-know-js-middle3/</loc>
-    
-    <lastmod>2018-10-06T06:17:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/09/15/you-dont-know-js-middle1/</loc>
-    
-    <lastmod>2018-09-16T12:50:13.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/04/09/swim/</loc>
-    
-    <lastmod>2018-07-21T05:56:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/01/28/jsArray/</loc>
-    
-    <lastmod>2018-07-21T05:56:03.000Z</lastmod>
+    <lastmod>2020-02-19T06:48:45.359Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://liuchao0704.github.io/2017/03/09/ngRepeat/</loc>
     
-    <lastmod>2018-07-21T05:53:30.000Z</lastmod>
+    <lastmod>2020-02-19T06:48:29.422Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://liuchao0704.github.io/2017/05/17/broadcast/</loc>
+    <loc>https://liuchao0704.github.io/2018/01/06/stickyfooter/</loc>
     
-    <lastmod>2018-07-21T05:52:08.000Z</lastmod>
+    <lastmod>2020-02-19T06:48:03.045Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/04/23/datepicker/</loc>
+    
+    <lastmod>2020-02-19T06:47:48.680Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://liuchao0704.github.io/2017/02/08/date/</loc>
     
-    <lastmod>2018-07-21T05:49:57.000Z</lastmod>
+    <lastmod>2020-02-19T06:47:44.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2019/01/19/vue/</loc>
+    
+    <lastmod>2020-02-19T06:47:12.758Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-02-19T06:46:00.786Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://liuchao0704.github.io/about/index.html</loc>
     
-    <lastmod>2017-12-16T08:35:58.000Z</lastmod>
+    <lastmod>2020-02-19T06:11:17.651Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/timeline/index.html</loc>
+    
+    <lastmod>2020-02-19T06:08:51.549Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/comment/index.html</loc>
+    
+    <lastmod>2020-02-19T05:51:00.967Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/11/15/cssworld-float/</loc>
+    
+    <lastmod>2020-02-19T04:10:37.583Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/05/06/cssworld-box/</loc>
+    
+    <lastmod>2020-02-19T04:09:23.820Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2020/01/30/nativeFunc/</loc>
+    
+    <lastmod>2020-02-19T04:08:46.294Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2019/12/21/string&number/</loc>
+    
+    <lastmod>2020-02-19T04:08:37.455Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2020/01/12/casts/</loc>
+    
+    <lastmod>2020-02-19T04:08:25.414Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/10/07/you-dont-know-js-scope/</loc>
+    
+    <lastmod>2020-02-19T04:08:11.609Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/08/07/you-dont-know-js-index/</loc>
+    
+    <lastmod>2020-02-19T04:08:03.724Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/05/07/cssworld-line-height/</loc>
+    
+    <lastmod>2020-02-19T04:07:39.262Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/04/16/cssworld-index/</loc>
+    
+    <lastmod>2020-02-19T04:07:33.557Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/01/28/jsArray/</loc>
+    
+    <lastmod>2020-02-19T03:54:40.470Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2019/10/01/resume/</loc>
+    
+    <lastmod>2020-02-19T03:50:45.584Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/07/07/ng-app/</loc>
+    
+    <lastmod>2020-02-19T03:50:22.041Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/02/28/ng-form/</loc>
+    
+    <lastmod>2020-02-19T03:46:11.996Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/05/17/ng-broadcast/</loc>
+    
+    <lastmod>2020-02-19T03:46:04.598Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/04/10/multiselect/</loc>
+    
+    <lastmod>2020-02-19T03:45:55.877Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/02/12/gulpAuto/</loc>
+    
+    <lastmod>2020-02-19T03:29:46.241Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2019/12/17/array/</loc>
+    
+    <lastmod>2020-02-19T03:27:03.094Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2019/08/02/test/</loc>
+    
+    <lastmod>2020-02-19T03:18:58.725Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/02/01/reg/</loc>
+    
+    <lastmod>2020-02-19T03:16:48.877Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/04/09/swim/</loc>
+    
+    <lastmod>2020-02-19T02:44:20.168Z</lastmod>
     
   </url>
   

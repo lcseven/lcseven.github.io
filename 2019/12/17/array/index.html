@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="南京信息工程大学 擅长前端，热爱研究移动端开发与前端性能"><title>Array数组 | 超元气Zeroの札记</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Array数组</h1><a id="logo" href="/.">超元气Zeroの札记</a><p class="description">一个集美貌与才华于一身的程序媛</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/comment/"><i class="fa fa-comments"> 留言</i></a><a href="/timeline/"><i class="fa fa-history"> 历史</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Array数组</h1><div class="post-meta">Dec 17, 2019<span> | </span><span class="category"><a href="/categories/js/">js</a></span></div><a class="disqus-comment-count" href="/2019/12/17/array/#vcomment"><span class="valine-comment-count" data-xid="/2019/12/17/array/"></span><span> 条评论</span></a><div class="post-content"><p> 数组方法总结&amp;es6新增API</p>
+<a id="more"></a>
+<h2 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of()"></a>Array.of()</h2><p>Array.of() 方法创建一个具有可变数量参数的新数组示例，而不考虑参数的数量或类型。</p>
+<ul>
+<li><p>语法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.of(element0[, element1[, ...[, elementN]]])</span><br></pre></td></tr></table></figure>
+<ul>
+<li>参数<br>element<em>N</em>任意个参数，将按顺序成为返回数组中的元素。</li>
+<li>返回值<br>新的 <code>Array</code> 示例。</li>
+</ul>
+</li>
+<li><p>示例</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; <span class="comment">//字面量创造函数</span></span><br><span class="line"><span class="keyword">var</span> arr1 = <span class="built_in">Array</span>(<span class="number">3</span>); <span class="comment">//产生空槽数组 [empty × 3]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Array</span>.of(<span class="number">3</span>)) <span class="comment">// [3]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Array</span>.of()) <span class="comment">// []</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from()"></a>Array.from()</h2><p>Array.from() 方法从一个类似数组或可迭代对象创建一个新的，浅拷贝的数组示例。  </p>
+<ul>
+<li><p>语法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.from(arrayLike[, mapFn[, thisArg]])</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>参数<br>  <code>arrayLike</code> 想要转换成数组的伪数组对象或可迭代对象<br>  <code>mapFn</code> (可选参数) 如果指定了该参数，新数组中的每个元素会执行该回调函数。<br>  <code>thisArg</code>(可选参数)执行回调函数<code>mapFn</code> 时 <code>this</code> 对象</p>
+</li>
+<li><p>返回值<br>一个新的数组示例</p>
+</li>
+</ul>
+</li>
+<li><p>示例</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.from(<span class="string">'foo'</span>); <span class="comment">// [ "f", "o", "o" ]</span></span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">     <span class="keyword">return</span> <span class="built_in">Array</span>.from(<span class="built_in">arguments</span>);</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> f(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// [ 1, 2, 3 ]    </span></span><br><span class="line"> </span><br><span class="line"> <span class="built_in">Array</span>.from([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], x =&gt; x + x);<span class="comment">// [2, 4, 6]</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray()"></a>Array.isArray()</h2><p>Array.isArray() 用于确定传递的值是否是一个 Array。</p>
+<ul>
+<li><p>语法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.isArray(obj)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>参数<br>  <code>obj</code> 需要检测的值</p>
+</li>
+<li><p>返回值<br>  如果值是 <code>Array</code>，则为true; 否则为false。</p>
+</li>
+</ul>
+</li>
+<li><p>示例</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 下面的函数调用都返回 true</span></span><br><span class="line"><span class="built_in">Array</span>.isArray([]);</span><br><span class="line"><span class="built_in">Array</span>.isArray([<span class="number">1</span>]);</span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="keyword">new</span> <span class="built_in">Array</span>());</span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>))</span><br><span class="line"><span class="comment">// 鲜为人知的事实：其实 Array.prototype 也是一个数组。</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(<span class="built_in">Array</span>.prototype);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Polyfill<br>假如不存在 Array.isArray()，则在其他代码之前运行下面的代码将创建该方法。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!<span class="built_in">Array</span>.isArray) &#123;</span><br><span class="line">  <span class="built_in">Array</span>.isArray = <span class="function"><span class="keyword">function</span>(<span class="params">arg</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(arg) === <span class="string">'[object Array]'</span>;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Array-copyWithin"><a href="#Array-copyWithin" class="headerlink" title="Array.copyWithin()"></a>Array.copyWithin()</h2><p><code>copyWithin()</code> 方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，不会改变原数组的长度。</p>
+<ul>
+<li><p>语法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.copyWithin(target[, start[, end]])</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参数<br>  <strong>target</strong><br>  0 为基底的索引，复制序列到该位置。如果是负数，target 将从末尾开始计算。<br>  如果 target 大于等于 arr.length，将会不发生拷贝。如果 target 在 start 之后，复制的序列将被修改以符合 arr.length。<br>  <strong>start</strong><br>  0 为基底的索引，开始复制元素的起始位置。如果是负数，start 将从末尾开始计算。<br>  如果 start 被忽略，copyWithin 将会从0开始复制。<br>  <strong>end</strong><br>  0 为基底的索引，开始复制元素的结束位置。copyWithin 将会拷贝到该位置，但不包括 end 这个位置的元素。如果是负数， end 将从末尾开始计算。<br>  如果 end 被忽略，copyWithin 方法将会一直复制至数组结尾（默认为 arr.length）。</p>
+</li>
+<li><p>返回值<br>改变后的数组。</p>
+</li>
+<li><p>示例</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line">numbers.copyWithin(<span class="number">-2</span>);</span><br><span class="line"><span class="comment">// [1, 2, 3, 1, 2]</span></span><br><span class="line"></span><br><span class="line">numbers.copyWithin(<span class="number">0</span>, <span class="number">3</span>);</span><br><span class="line"><span class="comment">// [4, 5, 3, 4, 5]</span></span><br><span class="line"></span><br><span class="line">numbers.copyWithin(<span class="number">0</span>, <span class="number">3</span>, <span class="number">4</span>);</span><br><span class="line"><span class="comment">// [4, 2, 3, 4, 5]</span></span><br><span class="line"></span><br><span class="line">numbers.copyWithin(<span class="number">-2</span>, <span class="number">-3</span>, <span class="number">-1</span>);</span><br><span class="line"><span class="comment">// [1, 2, 3, 3, 4]</span></span><br><span class="line"></span><br><span class="line">[].copyWithin.call(&#123;<span class="attr">length</span>: <span class="number">5</span>, <span class="number">3</span>: <span class="number">1</span>&#125;, <span class="number">0</span>, <span class="number">3</span>);</span><br><span class="line"><span class="comment">// &#123;0: 1, 3: 1, length: 5&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Array-fill"><a href="#Array-fill" class="headerlink" title="Array.fill()"></a>Array.fill()</h2><p><code>fill()</code> 方法用一个固定值填充一个数组中从起始索引到终止索引内的全部元素。不包括终止索引。</p>
+<ul>
+<li><p>语法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.fill(value[, start[, end]])</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参数<br>   <strong>value</strong>  用来填充数组元素的值。<br>   <strong>start</strong> 可选， 起始索引，默认值为0。<br>   <strong>end</strong> 可选，终止索引，默认值为 this.length。</p>
+</li>
+<li><p>返回值<br>修改后的数组</p>
+</li>
+<li>示例</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].fill(<span class="number">4</span>);               <span class="comment">// [4, 4, 4]</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].fill(<span class="number">4</span>, <span class="number">1</span>);            <span class="comment">// [1, 4, 4]</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].fill(<span class="number">4</span>, <span class="number">1</span>, <span class="number">2</span>);         <span class="comment">// [1, 4, 3]</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].fill(<span class="number">4</span>, <span class="number">1</span>, <span class="number">1</span>);         <span class="comment">// [1, 2, 3]</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].fill(<span class="number">4</span>, <span class="number">3</span>, <span class="number">3</span>);         <span class="comment">// [1, 2, 3]</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].fill(<span class="number">4</span>, <span class="number">-3</span>, <span class="number">-2</span>);       <span class="comment">// [4, 2, 3]</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].fill(<span class="number">4</span>, <span class="literal">NaN</span>, <span class="literal">NaN</span>);     <span class="comment">// [1, 2, 3]</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].fill(<span class="number">4</span>, <span class="number">3</span>, <span class="number">5</span>);         <span class="comment">// [1, 2, 3]</span></span><br><span class="line"><span class="built_in">Array</span>(<span class="number">3</span>).fill(<span class="number">4</span>);                <span class="comment">// [4, 4, 4]</span></span><br><span class="line">[].fill.call(&#123; <span class="attr">length</span>: <span class="number">3</span> &#125;, <span class="number">4</span>);  <span class="comment">// &#123;0: 4, 1: 4, 2: 4, length: 3&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Objects by reference.</span></span><br><span class="line"><span class="keyword">var</span> arr = <span class="built_in">Array</span>(<span class="number">3</span>).fill(&#123;&#125;) <span class="comment">// [&#123;&#125;, &#123;&#125;, &#123;&#125;];</span></span><br><span class="line"><span class="comment">// 需要注意如果fill的参数为引用类型，会导致都执行同一个引用类型</span></span><br><span class="line"><span class="comment">// 如 arr[0] === arr[1] 为true</span></span><br><span class="line">arr[<span class="number">0</span>].hi = <span class="string">"hi"</span>; <span class="comment">// [&#123; hi: "hi" &#125;, &#123; hi: "hi" &#125;, &#123; hi: "hi" &#125;]</span></span><br></pre></td></tr></table></figure>
+<h2 id="Array-reduce"><a href="#Array-reduce" class="headerlink" title="Array.reduce()"></a>Array.reduce()</h2><p><code>reduce()</code>方法对数组中的每个元素执行一个由您提供的reducer函数(升序执行)，将其结果汇总为单个返回值。可以简单的理解为累加</p>
+<ul>
+<li>语法</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.reduce(callback(accumulator, currentValue[, index[, array]])[,       initialValue])</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>参数</p>
+<ul>
+<li><strong>callback</strong> 执行数组中每个值 (如果没有提供 initialValue则第一个值除外)的函数，包含四个参数：<pre><code>**accumulator** 累计器累计回调的返回值; 它是上一次调用回调时返回的累积值，或initialValue（见于下方）。
+**currentValue** 数组中正在处理的元素。
+**index** 可选，数组中正在处理的当前元素的索引。 如果提供了initialValue，则起始索引号为0，否则从索引1起始。
+**array** 可选 调用reduce()的数组
+</code></pre><ul>
+<li><strong>initialValue</strong>  可选，作为第一次调用 callback函数时的第一个参数的值。 如果没有提供初始值，则将使用数组中的第一个元素。 在没有初始值的<strong>空数组</strong>上调用 reduce 将报错。 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>返回值<br>函数累计处理的结果</p>
+</li>
+<li><p>描述<br>回调函数第一次执行时，accumulator 和currentValue的取值有两种情况：如果调用reduce()时提供了initialValue，accumulator取值为initialValue，currentValue取数组中的第一个值；如果没有提供 initialValue，那么accumulator取数组中的第一个值，currentValue取数组中的第二个值。</p>
+<blockquote>
+<p><strong>注意</strong>：如果没有提供<code>initialValue</code>，reduce 会从索引1的地方开始执行 callback 方法，跳过第一个索引。如果提供<code>initialValue</code>，从索引0开始。</p>
+</blockquote>
+</li>
+<li><p>示例</p>
+<ul>
+<li>累加</li>
+<li>二维数组转化一维数组</li>
+<li>计算数组中每个元素出现的次数</li>
+<li>数组去重<blockquote>
+<p>注意： 如果你正在使用一个可以兼容<code>Set</code> 和 <code>Array.from()</code>的环境， 你可以使用<code>let orderedArray = Array.from(new Set(myArray));</code>来获得一个相同元素被移除的数组。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].reduce(<span class="function"><span class="keyword">function</span> (<span class="params">accumulator, currentValue</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> accumulator + currentValue;</span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line"><span class="comment">// 和为 6</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> flattened = [[<span class="number">0</span>, <span class="number">1</span>], [<span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>]].reduce(</span><br><span class="line">  <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.concat(b);</span><br><span class="line">  &#125;,</span><br><span class="line">  []</span><br><span class="line">);</span><br><span class="line"><span class="comment">// flattened is [0, 1, 2, 3, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> names = [<span class="string">'Alice'</span>, <span class="string">'Bob'</span>, <span class="string">'Tiff'</span>, <span class="string">'Bruce'</span>, <span class="string">'Alice'</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> countedNames = names.reduce(<span class="function"><span class="keyword">function</span> (<span class="params">allNames, name</span>) </span>&#123; </span><br><span class="line">  <span class="keyword">if</span> (name <span class="keyword">in</span> allNames) &#123;</span><br><span class="line">    allNames[name]++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> &#123;</span><br><span class="line">    allNames[name] = <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> allNames;</span><br><span class="line">&#125;, &#123;&#125;);</span><br><span class="line"><span class="comment">// countedNames is:</span></span><br><span class="line"><span class="comment">// &#123; 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myArray = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'e'</span>, <span class="string">'e'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'d'</span>, <span class="string">'d'</span>, <span class="string">'d'</span>];</span><br><span class="line"><span class="keyword">var</span> myOrderedArray = myArray.reduce(<span class="function"><span class="keyword">function</span> (<span class="params">accumulator, currentValue</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (accumulator.indexOf(currentValue) === <span class="number">-1</span>) &#123;</span><br><span class="line">    accumulator.push(currentValue);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> accumulator</span><br><span class="line">&#125;, [])</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(myOrderedArray);</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Array-push-pop-shift-unshift"><a href="#Array-push-pop-shift-unshift" class="headerlink" title="Array.push()/ .pop()/ .shift()/ .unshift()"></a>Array.push()/ .pop()/ .shift()/ .unshift()</h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+<th>返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>push</td>
+<td>向数组的末尾添加一个或多个元素</td>
+<td>新的 length 属性值</td>
+</tr>
+<tr>
+<td>pop</td>
+<td>数组中删除最后一个元素</td>
+<td>该元素的值(当数组为空时返回undefined)</td>
+</tr>
+<tr>
+<td>shift</td>
+<td>从数组中删除第一个元素</td>
+<td>该元素的值(当数组为空时返回undefined)</td>
+</tr>
+<tr>
+<td>unshift</td>
+<td>将一个或多个元素添加到数组的开头</td>
+<td>新的 length 属性值</td>
+</tr>
+</tbody>
+</table>
+</div><div class="tags"><a href="/tags/array/">array</a></div><div class="post-nav"><a class="pre" href="/2019/12/21/string&amp;number/">String字符串 &amp; 数字</a><a class="next" href="/2019/10/01/resume/">个人简历 | 持续更新</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'gFs66jR1O3Kbj7PRHYuIkGg4-gzGzoHsz',
+  appKey:'QPmFjSSGK2WHvQ9LosAY8WTj',
+  placeholder:'欢迎来留言',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="回车键开启搜" type="text" name="q" results="0"><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/angularJs/">angularJs</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/个人/">个人</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/构建工具/">构建工具</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/笔记【css世界】/">笔记【css世界】</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/笔记【你不知道的js】/">笔记【你不知道的js】</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/02/10/float/">二进制浮点数</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/30/nativeFunc/">原生函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/12/casts/">强制类型转换</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/12/21/string&number/">String字符串 & 数字</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/12/17/array/">Array数组</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/01/resume/">个人简历 | 持续更新</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/02/test/">前端面试总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/05/hdnj-sw01/">黄帝内经-素问-上古天真论-01</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/19/vue/">Vue使用总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/01/nodejs/">NodeJs搭建本地服务器之使用手机访问</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.angular.cn/" title="Angular" target="_blank">Angular</a><ul></ul><a href="https://cn.vuejs.org/" title="Vue" target="_blank">Vue</a><ul></ul><a href="https://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">超元气Zeroの札记.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>

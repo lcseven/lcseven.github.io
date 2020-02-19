@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="南京信息工程大学 擅长前端，热爱研究移动端开发与前端性能"><title>前端面试总结 | 超元气Zeroの札记</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">前端面试总结</h1><a id="logo" href="/.">超元气Zeroの札记</a><p class="description">一个集美貌与才华于一身的程序媛</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/comment/"><i class="fa fa-comments"> 留言</i></a><a href="/timeline/"><i class="fa fa-history"> 历史</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">前端面试总结</h1><div class="post-meta">Aug 2, 2019<span> | </span><span class="category"><a href="/categories/前端/">前端</a></span></div><a class="disqus-comment-count" href="/2019/08/02/test/#vcomment"><span class="valine-comment-count" data-xid="/2019/08/02/test/"></span><span> 条评论</span></a><div class="post-content"><p>持续更新自我学习<br><a id="more"></a></p>
+<h2 id="Html5-CSS3-新特性"><a href="#Html5-CSS3-新特性" class="headerlink" title="Html5,CSS3 新特性"></a>Html5,CSS3 新特性</h2><p>html5 增加了一些新元素更符合语意化<code>&lt;header&gt;&lt;/header&gt;</code>,<code>&lt;nav&gt;&lt;/nav&gt;</code>,<code>&lt;footer&gt;&lt;/footer&gt;</code>,<code>&lt;video &gt;&lt;/video&gt;</code><br>html5 canvas ，拖拽，应用缓存<br>css3 选择器，动画，渐变，过渡，border，盒模型，flex布局。</p>
+<h2 id="父级中的子元素上下左右局中"><a href="#父级中的子元素上下左右局中" class="headerlink" title="父级中的子元素上下左右局中"></a>父级中的子元素上下左右局中</h2><ul>
+<li>flex 布局</li>
+<li>position:absoulte</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*flex 布局*/</span></span><br><span class="line"><span class="selector-class">.parent</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: flex; </span><br><span class="line">    align-items: center; // 垂直 交叉轴</span><br><span class="line">    justify-content: center; // 水平 主轴方向</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="MVC-和-MVVM"><a href="#MVC-和-MVVM" class="headerlink" title="MVC 和 MVVM"></a>MVC 和 MVVM</h2><ul>
+<li>MVC<ul>
+<li>M — Model 数据模型、数据源</li>
+<li>V  — View  视图层、界面</li>
+<li>C  — Controller 控制层、逻辑处理</li>
+<li>用户操作view，view将改变传入controller，controller修改model，model将修改同步到view</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>MMVM<ul>
+<li>M — Model 数据模型、数据源</li>
+<li>V  — View  视图层、界面</li>
+<li>VM —  View-Model 是View和Model的桥接</li>
+<li>举例Vue中，view通过事件绑定(DOM Listeners)操作model，model通过数据绑定(Data Bingdings)操作view</li>
+</ul>
+</li>
+</ul>
+<h2 id="Jquery和VUE"><a href="#Jquery和VUE" class="headerlink" title="Jquery和VUE"></a>Jquery和VUE</h2><ul>
+<li>数据和视图的分离，解耦(开放封闭原则)</li>
+<li>数据驱动视图，只需关心数据变化，DOM操作被封</li>
+</ul>
+<h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><ul>
+<li>为什么使用模块化，不使用模块化会怎么样<ul>
+<li>代码中的函数必须是全局变量才能使用给使用方带来全局变量的污染</li>
+<li>js文件中的互相引用关系混乱</li>
+<li>使用模块化不会暴露全局变量，自动引用依赖</li>
+</ul>
+</li>
+<li>AMD （Asynchronous Module Definition，即异步模块加载机制）<ul>
+<li>AMD 典型代表 require.js</li>
+<li>全局define 函数</li>
+<li>全局require 函数</li>
+<li>依赖JS会自动、异步加载</li>
+</ul>
+</li>
+<li>CommonJS<ul>
+<li>nodejs模块化规范，前端大量使用</li>
+<li>前端开发依赖的插件和库，都可以从npm中获取</li>
+<li>构建工具的高度自动化</li>
+<li>CommonJS 不会异步加载JS，而是同步一次性加载出来。</li>
+</ul>
+</li>
+<li>ES6 模块化</li>
+</ul>
+<h2 id="JS中的强制转化和隐式转化"><a href="#JS中的强制转化和隐式转化" class="headerlink" title="JS中的强制转化和隐式转化"></a>JS中的强制转化和隐式转化</h2><ul>
+<li><strong>强制转化</strong> String（），Number（），Boolean（）</li>
+<li><strong>隐式转化</strong>   ，== 加减运算 关系操作符 逻辑操作符</li>
+</ul>
+<h2 id="Vue-取消事件冒泡"><a href="#Vue-取消事件冒泡" class="headerlink" title="Vue 取消事件冒泡"></a>Vue 取消事件冒泡</h2><ul>
+<li>vue取消事件冒泡<br><code></code><div @click.stop="doSomething($event)">vue取消事件冒泡</div></li>
+<li>vue阻止默认事件<br><code>&lt;div @click.prevent=&quot;doSomething($event)&quot;&gt;vue阻止默认事件&lt;/div&gt;</code></li>
+<li>js 防止冒泡和捕获<br>w3c的方法是e.stopPropagation()，IE则是使用e.cancelBubble = true</li>
+<li>取消默认事件<br>w3c的方法是e.preventDefault()，IE则是使用e.returnValue = false;</li>
+</ul>
+<h2 id="angularJS-双向数据绑定的实现"><a href="#angularJS-双向数据绑定的实现" class="headerlink" title="angularJS 双向数据绑定的实现"></a>angularJS 双向数据绑定的实现</h2><p>AngularJs 为 scope 模型上设置了一个 监听队列，用来监听数据变化并更新 view 。每次绑定一个东西到 view(html) 上时 AngularJs 就会往 $watch 队列里插入一条 $watch，用来检测它监视的 model 里是否有变化的东西。当浏览器接收到可以被 angular context 处理的事件时，$digest 循环就会触发。$digest 会遍历所有的 $watch。从而更新DOM。</p>
+<h2 id="HTML5中的datalist是什么"><a href="#HTML5中的datalist是什么" class="headerlink" title="HTML5中的datalist是什么"></a>HTML5中的datalist是什么</h2><p>datalist 是HTML5 的新的表单元素 datalist要结合input元素才行，给input提供可用数据源不需要手动输入，加快输入，而且datalist还可以达到模糊匹配的效果。  </p>
+<h2 id="本地存储和cookie之间的区别是什么"><a href="#本地存储和cookie之间的区别是什么" class="headerlink" title="本地存储和cookie之间的区别是什么"></a>本地存储和cookie之间的区别是什么</h2><p><a href="https://segmentfault.com/a/1190000015929184" target="_blank" rel="noopener">https://segmentfault.com/a/1190000015929184</a></p>
+<h4 id="数据有效期不同："><a href="#数据有效期不同：" class="headerlink" title="数据有效期不同："></a>数据有效期不同：</h4><ul>
+<li><p>默认情况下cookie只在浏览器会话期存在.退出浏览器就丢失;可以用expires设置时间;退出浏览器后就不会丢失并存为客户端浏览器的cookie文件;过了时间后cookie失效,还会自动删除cookie文件.</p>
+</li>
+<li><p>sessionStorage生命周期为当前窗口或标签页，一旦窗口或标签页被永久关闭了，那么所有通过sessionStorage存储的数据也就被清空了</p>
+</li>
+<li><p>localStorage 始终有效，长期保存。</p>
+</li>
+</ul>
+<h4 id="存储大小"><a href="#存储大小" class="headerlink" title="存储大小"></a>存储大小</h4><ul>
+<li>cookie历史悠久,浏览器支持率高。数据不能超过4k。</li>
+<li>sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</li>
+</ul>
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><ul>
+<li><p>相同浏览器的不同页面间可以共享相同的 localStorage(页面属于相同域名和端口，同源策略)，但是不同页面或标签页间无法共享sessionStorage的信息</p>
+</li>
+<li><p>cookie也是在所有同源窗口中都是共享的</p>
+</li>
+<li><p>cookie的path属性:默认情况下,在同一个目录下文件可以调用; 例如:<a href="http://demo.com/c1/1.html" target="_blank" rel="noopener">http://demo.com/c1/1.html</a> 设置的cookie可以被<a href="http://demo.com/c1/2.html调用.但不能被http://demo.com/c2/" target="_blank" rel="noopener">http://demo.com/c1/2.html调用.但不能被http://demo.com/c2/</a> 目录下的文件调用; 但如把path属性设成”/“;则在<a href="http://demo.com/" target="_blank" rel="noopener">http://demo.com/</a> 下的所有文件都可调用此cookie.</p>
+</li>
+<li><p>cookie的domain属性:例如设成”.demo.com”则在.demo.com(“<a href="http://a.demo.com&quot;" target="_blank" rel="noopener">http://a.demo.com&quot;</a> 和 “<a href="http://b.demo.com&quot;)下的所有服务器下的文件都可以调用cookie" target="_blank" rel="noopener">http://b.demo.com&quot;)下的所有服务器下的文件都可以调用cookie</a>.</p>
+</li>
+</ul>
+<p>WebStorage 支持事件通知机制，可以将数据更新的通知发送给监听者。Web Storage 的 api 接口使用更方便。</p>
+<h2 id="link-和-import的区别是"><a href="#link-和-import的区别是" class="headerlink" title="link 和 @import的区别是"></a>link 和 @import的区别是</h2><p>1.从属关系区别<br>@import是 css 提供的语法规则，只有导入样式表的作用；link是HTML提供的标签，不仅可以加载 css 文件，还可以定义 RSS、rel 连接属性等。</p>
+<p>2.加载顺序区别<br>加载页面时，link标签引入的 css 被同时加载；@import引入的 css 将在页面加载完毕后被加载。</p>
+<p>3.兼容性区别<br>@import是 CSS2.1 才有的语法，故只可在 IE5+ 才能识别；link标签作为 HTML 元素，不存在兼容性问题。</p>
+<h2 id="CSS选择器有哪些，哪些属性可以继承，优先级如何"><a href="#CSS选择器有哪些，哪些属性可以继承，优先级如何" class="headerlink" title="CSS选择器有哪些，哪些属性可以继承，优先级如何"></a>CSS选择器有哪些，哪些属性可以继承，优先级如何</h2><h3 id="优先级-0-1-0-0"><a href="#优先级-0-1-0-0" class="headerlink" title="优先级 0,1,0,0"></a>优先级 0,1,0,0</h3><ul>
+<li>id选择器 </li>
+</ul>
+<h3 id="优先级-0-0-1-0"><a href="#优先级-0-0-1-0" class="headerlink" title="优先级 0,0,1,0"></a>优先级 0,0,1,0</h3><ul>
+<li>类选择器</li>
+<li>属性选择器</li>
+<li>伪类选择器 <code>:link</code></li>
+</ul>
+<h3 id="优先级-0-0-0-1"><a href="#优先级-0-0-0-1" class="headerlink" title="优先级 0,0,0,1"></a>优先级 0,0,0,1</h3><ul>
+<li>元素选择器</li>
+<li>伪元素选择器</li>
+<li>后代选择器</li>
+<li>子元素选择器</li>
+<li>相邻兄弟选择器</li>
+</ul>
+<h3 id="优先级-0-0-0-0"><a href="#优先级-0-0-0-0" class="headerlink" title="优先级 0,0,0,0"></a>优先级 0,0,0,0</h3><ul>
+<li>通配选择器*对特殊性没有贡献，即0,0,0,0。</li>
+</ul>
+<h3 id="可以继承的属性"><a href="#可以继承的属性" class="headerlink" title="可以继承的属性"></a>可以继承的属性</h3><ul>
+<li>color,line-height,font-size</li>
+</ul>
+<h3 id="补充-优先级-1-0-0-0"><a href="#补充-优先级-1-0-0-0" class="headerlink" title="补充 优先级 1,0,0,0"></a>补充 优先级 1,0,0,0</h3><p> 行间样式的特殊性是1,0,0,0<br> 最后比较特殊的一个标志!important(权重)，它没有特殊性值，但它的优先级是最高的，为了方  便记忆，可以认为它的特殊性值为1,0,0,0,0。</p>
+<h2 id="html5中的应用缓存是什么"><a href="#html5中的应用缓存是什么" class="headerlink" title="html5中的应用缓存是什么"></a>html5中的应用缓存是什么</h2><p>应用程序缓存是专门从浏览器的缓存中分出一块缓存区用于缓存数据，从而在离线状态下也能读取和使用该数据，这就是应用缓存，或者说叫appcache</p>
+<h2 id="用Javascript创建一个对象"><a href="#用Javascript创建一个对象" class="headerlink" title="用Javascript创建一个对象"></a>用Javascript创建一个对象</h2><h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><p>类似于普通函数调用 内部显式的创建对象 并且return 。<br>工厂模式解决了创建多个相似对象的问题，但是没有解决对象识别的问题。</p>
+<h4 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h4><ul>
+<li>没有显示的创建对象 </li>
+<li>直接属性和方法赋给了this对象</li>
+<li>函数名大写</li>
+<li>调用函数的时候用new</li>
+</ul>
+<h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h4><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 工厂模式</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createObj</span></span>(name,age) &#123;</span><br><span class="line">    <span class="keyword">var</span> o = <span class="keyword">new</span> <span class="type">Object</span>();</span><br><span class="line">    o.name = name;</span><br><span class="line">    o.age = age;</span><br><span class="line">    <span class="keyword">return</span> o;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> obj1 = createObj(<span class="string">'l'</span>,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">var</span> obj2 = createObj(<span class="string">'c'</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 构造函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">CreateObj</span></span>(name,age) &#123;</span><br><span class="line">    <span class="built_in">this</span>.name = name;</span><br><span class="line">    <span class="built_in">this</span>.age = age;</span><br><span class="line">   <span class="comment">// return this; // 默认return this</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> obj3 = <span class="keyword">new</span> <span class="type">CreateObj</span>(<span class="string">'L'</span>,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">var</span> obj4 = <span class="keyword">new</span> <span class="type">CreateObj</span>(<span class="string">'C'</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 原型模式</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">PrototypeCreateObj</span></span>() &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">PrototypeCreateObj.prototype.name = <span class="string">'demo'</span>;</span><br><span class="line">PrototypeCreateObj.prototype.age =  <span class="number">18</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj5 = <span class="keyword">new</span> <span class="type">PrototypeCreateObj</span>();</span><br><span class="line"><span class="keyword">var</span> obj6 = <span class="keyword">new</span> <span class="type">PrototypeCreateObj</span>();</span><br></pre></td></tr></table></figure>
+<h2 id="事件循环机制"><a href="#事件循环机制" class="headerlink" title="事件循环机制"></a>事件循环机制</h2><p><a href="https://blog.csdn.net/woleigequshawanyier/article/details/86371850" target="_blank" rel="noopener">https://blog.csdn.net/woleigequshawanyier/article/details/86371850</a></p>
+<h2 id="find-fileter-map-forEach-和-for-循环的区别"><a href="#find-fileter-map-forEach-和-for-循环的区别" class="headerlink" title="find(),fileter(),map(),forEach 和 for 循环的区别"></a>find(),fileter(),map(),forEach 和 for 循环的区别</h2><p><a href="https://blog.csdn.net/csdn_yudong/article/details/80456224" target="_blank" rel="noopener">JavaScript 中 forEach、map、filter 终极篇</a></p>
+<p>find()方法主要用来返回数组中符合条件的第一个元素(如果没有则返回<strong>undefined</strong>)  </p>
+<p>filter()方法主要用来筛选数组中符合条件的所有元素，并且放在一个新数组中，如果没有，返回一个空数组  </p>
+<p>forEach()方法也是用于对数组中的每一个元素执行一次回调函数，但它<strong>没有返回值</strong>(或者说它的返回值为undefined，即便我们在回调函数中写了return语句，返回值依然为undefined。forEach不可以使用break，continue和return语句<br>forEach 遍历的范围在第一次调用 callback 前就会确定。调用 forEach 后添加到数组中的项不会被 callback 访问到。如果已经存在的值被改变，则传递给 callback 的值是 forEach 遍历到他们那一刻的值。已删除的项不会被遍历到。如果已访问的元素在迭代时被删除了(例如使用 shift()) ，之后的元素将被跳过。<br>for循环可以使用break、continue和return语句</p>
+<p>map()方法主要用来对数组中的每一个元素执行一次回调函数，并且把处理结果<strong>映射</strong>到一个新数组中返回(如果没有返回值，新数组中的每一个元素都为undefined)<br>使用 map 方法处理数组时，数组元素的范围是在 callback 方法第一次调用之前就已经确定了。在 map 方法执行的过程中：原数组中新增加的元素将不会被 callback 访问到；若已经存在的元素被改变或删除了，则它们的传递到 callback 的值是 map 方法遍历到它们的那一时刻的值；而被删除的元素将不会被访问到。<strong>和 forEach 一样</strong></p>
+<h2 id="从输入url到页面渲染发生了几步？"><a href="#从输入url到页面渲染发生了几步？" class="headerlink" title="从输入url到页面渲染发生了几步？"></a>从输入url到页面渲染发生了几步？</h2><ul>
+<li>加载资源的形式<ol>
+<li>输入url(跳转一个路由) 加载html</li>
+<li>加载html中依赖的静态资源</li>
+</ol>
+</li>
+<li>加载一个资源的过程<ol>
+<li>浏览器根据DNS服务器得到域名的IP地址</li>
+<li>向这个IP的服务器发送http/https请求</li>
+<li>服务器收到、处理并返回http请求</li>
+<li>浏览器得到返回内容</li>
+</ol>
+</li>
+<li>浏览器渲染页面的过程<ol>
+<li>根据HTML结构生成DOM Tree</li>
+<li>根据CSS 生成 CSSOM</li>
+<li>将DOM和CSSOM 整合形成RenderTree</li>
+<li>根据RenderTree 开始渲染和展示</li>
+<li>遇到<code>&lt;script&gt;</code>时，会执行并阻塞渲染</li>
+</ol>
+</li>
+</ul>
+<h2 id="window-onload-和-DomContentLoaded"><a href="#window-onload-和-DomContentLoaded" class="headerlink" title="window.onload 和 DomContentLoaded"></a>window.onload 和 DomContentLoaded</h2><ul>
+<li>onLoad是的在页面所有文件加载完成后执行</li>
+<li>DomContentLoad是Dom加载完成后执行，不必等待样式脚本和图片加载</li>
+</ul>
+<h2 id="浏览器的回流和重绘"><a href="#浏览器的回流和重绘" class="headerlink" title="浏览器的回流和重绘"></a>浏览器的回流和重绘</h2><p><a href="http://www.imooc.com/article/45936" target="_blank" rel="noopener"></a></p>
+<ul>
+<li>重排也叫回流<br>重排一定会引起重绘</li>
+<li>重绘<br>重绘不一定引起重排</li>
+</ul>
+<h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><ul>
+<li>加载页面和静态资源<ol>
+<li>静态资源的压缩合并(webpack构建工具合并)</li>
+<li>静态资源缓存</li>
+<li>使用CDN让资源加载更快(CDN简单来说不同区域的优化)</li>
+<li>使用SSR后端渲染(服务端渲染)，数据直接输出到HTML中</li>
+</ol>
+</li>
+<li>页面渲染<ol>
+<li>CSS放前面，JS放底部</li>
+<li>懒加载(分批加载内容)</li>
+<li>减少DOM查询，对DOM查询做缓存</li>
+<li>减少DOM操作，多个操作进来合并在一起</li>
+<li><a href="https://segmentfault.com/a/1190000018428170?utm_source=tag-newest" target="_blank" rel="noopener">事件节流/防抖</a></li>
+</ol>
+</li>
+</ul>
+<h2 id="什么是跨域问题，如何解决？"><a href="#什么是跨域问题，如何解决？" class="headerlink" title="什么是跨域问题，如何解决？"></a>什么是跨域问题，如何解决？</h2><ul>
+<li>浏览器同源策略 (协议、端口、域名)同源策略限制了从同一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的<strong>重要安全机制</strong>。</li>
+<li>如何解决？<ul>
+<li><strong>script标签</strong> ，<strong>link标签</strong> ，<strong>img标签</strong>都可以跨域</li>
+<li><code>&lt;img&gt;</code>用于打点统计，统计网站可能是其他网站</li>
+<li><code>&lt;img&gt;</code>,<code>&lt;link&gt;</code>可以使用CDN，CDN是其他域</li>
+<li>JSONP原理 利用script标签可以跨域。</li>
+<li>服务器端设置 http header</li>
+<li>反向代理。</li>
+</ul>
+</li>
+</ul>
+<h2 id="安全性能"><a href="#安全性能" class="headerlink" title="安全性能"></a>安全性能</h2><ul>
+<li>XSS 跨站脚本攻击 用户输入内容里面包含代码<code>&lt;script&gt;</code> 执行，前端/后端替换转译字符</li>
+<li>CSRF/XSRF  跨站请求伪造 增加验证流程</li>
+</ul>
+</div><div class="tags"><a href="/tags/面试/">面试</a></div><div class="post-nav"><a class="pre" href="/2019/10/01/resume/">个人简历 | 持续更新</a><a class="next" href="/2019/04/05/hdnj-sw01/">黄帝内经-素问-上古天真论-01</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'gFs66jR1O3Kbj7PRHYuIkGg4-gzGzoHsz',
+  appKey:'QPmFjSSGK2WHvQ9LosAY8WTj',
+  placeholder:'欢迎来留言',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="回车键开启搜" type="text" name="q" results="0"><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/angularJs/">angularJs</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/个人/">个人</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/构建工具/">构建工具</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/笔记【css世界】/">笔记【css世界】</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/笔记【你不知道的js】/">笔记【你不知道的js】</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/02/10/float/">二进制浮点数</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/30/nativeFunc/">原生函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/12/casts/">强制类型转换</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/12/21/string&number/">String字符串 & 数字</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/12/17/array/">Array数组</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/01/resume/">个人简历 | 持续更新</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/02/test/">前端面试总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/05/hdnj-sw01/">黄帝内经-素问-上古天真论-01</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/19/vue/">Vue使用总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/01/nodejs/">NodeJs搭建本地服务器之使用手机访问</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.angular.cn/" title="Angular" target="_blank">Angular</a><ul></ul><a href="https://cn.vuejs.org/" title="Vue" target="_blank">Vue</a><ul></ul><a href="https://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">超元气Zeroの札记.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
