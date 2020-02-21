@@ -1,18 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>来玩一把狼人杀吧</title>
+    <url>/2020/02/21/werewolf/</url>
+    <content><![CDATA[<p>假期开启杀人模式,发现了很多新名词和玩法<br><a id="more"></a></p>
+<h2 id="上警那些事"><a href="#上警那些事" class="headerlink" title="上警那些事"></a>上警那些事</h2><ul>
+<li>上警：竞选警长</li>
+<li>退水：放弃竞选警长</li>
+<li>警辉流：验人顺序</li>
+</ul>
+<h2 id="警辉流"><a href="#警辉流" class="headerlink" title="警辉流"></a>警辉流</h2><h4 id="第一晚查A，顺验B-（预言家在验B之后死了）"><a href="#第一晚查A，顺验B-（预言家在验B之后死了）" class="headerlink" title="第一晚查A，顺验B （预言家在验B之后死了）"></a>第一晚查A，顺验B （预言家在验B之后死了）</h4><ul>
+<li>A为金水<ul>
+<li>AB双金水 ，警徽留B</li>
+<li>B查杀 ，警徽留A</li>
+</ul>
+</li>
+<li>A为查杀<ul>
+<li>B金水，警徽留B</li>
+<li>AB查杀 ，警徽撕掉</li>
+</ul>
+</li>
+</ul>
+<h4 id="第一晚查A，顺验B-，C"><a href="#第一晚查A，顺验B-，C" class="headerlink" title="第一晚查A，顺验B ，C"></a>第一晚查A，顺验B ，C</h4><ul>
+<li>A为金水<ul>
+<li>BC金水  警徽撕掉 （未查验的玩家大概率出多狼）</li>
+<li>B金水C查杀 ，警徽留B（BC一金水一查杀警辉留金水）</li>
+<li>B查杀C金水 ，警徽留C （BC一金水一查杀警辉留金水）</li>
+<li>BC查杀 ，警徽飞掉（警辉留A，不一定能证明BC双狼）</li>
+</ul>
+</li>
+<li>A为查杀<ul>
+<li>ABC查杀 ， 警徽飞（除了ABC，其他玩家大概率出好人）</li>
+<li>B查杀C金，警徽留C（BC一金水一查杀警辉留金水）</li>
+<li>C查杀B金 ， 警徽留B （BC一金水一查杀警辉留金水）</li>
+<li>BC金，警徽撕掉 （未查验的玩家大概率出多狼）</li>
+</ul>
+</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>警辉撕/留/飞 ：代表预言家的遗言告知所验人的结果</li>
+<li>验双人的情况：警辉留人（一金水一查杀，或者双金水）警辉撕（双查杀）</li>
+<li>验多人的情况：警辉留人（末两位一金水一查杀）警辉撕（末两位验到双金水）警辉飞（末两位验到双狼）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+  </entry>
+  <entry>
     <title>二进制浮点数</title>
     <url>/2020/02/10/float/</url>
     <content><![CDATA[<p>简单总结二进制浮点数原理</p>
 <a id="more"></a>
 <p>根据国际标准IEEE 754，任意一个二进制浮点数V可以表示成下面的形式：  </p>
-<p>$$<br>V = (-1)^{s}\times M \times2^{E}<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+V = (-1)^{s}\times M \times2^{E}</script><ul>
 <li>(-1)^s表示符号位，当s=0，V为正数；当s=1，V为负数。</li>
 <li>M表示有效数字，大于等于1，小于2。</li>
 <li>2^E表示指数位数。</li>
 </ul>
 <p>IEEE 754规定，对于32位的浮点数，最高的1位是符号位s，接着的8位是指数E，剩下的23位为有效数字M。对于64位的浮点数，最高的1位是符号位S，接着的11位是指数E，剩下的52位为有效数字M。  </p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -31,6 +79,8 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -49,6 +99,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>IEEE 754对有效数字M和指数E，还有一些特别规定。<br>前面说过，1≤M&lt;2，也就是说，M可以写成1.xxxxxx的形式，其中xxxxxx表示小数部分。IEEE 754规定，在计算机内部保存M时，默认这个数的第一位总是1，因此可以被舍去，只保存后面的xxxxxx部分。比如保存1.01的时候，只保存01，等到读取的时候，再把第一位的1加上去。这样做的目的，是节省1位有效数字。以32位浮点数为例，留给M只有23位，将第一位的1舍去以后，等于可以保存24位有效数字。<br>首先，E为一个无符号整数（unsigned int）。这意味着，如果E为8位，它的取值范围为0~255；如果E为11位，它的取值范围为0~2047。但是，我们知道，科学计数法中的E是可以出现负数的，所以IEEE 754规定，E的真实值必须再减去一个中间数，对于8位的E，这个中间数是127；对于11位的E，这个中间数是1023。<br>比如，2^10的E是10，所以保存成32位浮点数时，必须保存成10+127=137，即10001001。<br>然后，指数E还可以再分成三种情况：  </p>
 <ol>
 <li>E不全为0或不全为1。这时，浮点数就采用上面的规则表示，即指数E的计算值减去127（或1023），得到真实值，再将有效数字M前加上第一位的1。</li>
@@ -80,8 +131,7 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>二进制浮点数</tag>
-        <tag>number</tag>
+        <tag>s - number</tag>
       </tags>
   </entry>
   <entry>
@@ -122,7 +172,6 @@
       </categories>
       <tags>
         <tag>原生函数</tag>
-        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -171,6 +220,7 @@
 </ul>
 </li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -197,6 +247,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h3 id="ToBoolean"><a href="#ToBoolean" class="headerlink" title="ToBoolean"></a>ToBoolean</h3><p>JavaScript </p>
 <ul>
 <li>假值（falsy value）<ul>
@@ -300,7 +351,8 @@
 <li><p>性能<br>强烈建议使用 赋值操作符（+, +=）代替 concat 方法。</p>
 </li>
 </ul>
-<h2 id="String-slice-String-substring"><a href="#String-slice-String-substring" class="headerlink" title="String.slice() /  String.substring()"></a>String.slice() /  String.substring()</h2><table>
+<h2 id="String-slice-String-substring"><a href="#String-slice-String-substring" class="headerlink" title="String.slice() /  String.substring()"></a>String.slice() /  String.substring()</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>方法</th>
@@ -324,6 +376,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>JavaScript中的数字类型是基于IEEE 754标准来实现的，该标准通常也被称为“浮点数”。JavaScipt使用的是“双精度”格式（64位 二进制）。  </p>
 <p>JavaScript中的”整数“就是没有小数的十进制。所以42.0即等同于”整数“42。</p>
 <h2 id="较小的数值"><a href="#较小的数值" class="headerlink" title="较小的数值"></a>较小的数值</h2><p>如何判断0.1 + 0.2 = 0.3 ？  </p>
@@ -358,13 +411,12 @@
         <category>笔记【你不知道的js】</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>number</tag>
         <tag>string</tag>
+        <tag>number</tag>
       </tags>
   </entry>
   <entry>
-    <title>Array数组</title>
+    <title>Array数组常用方法总结</title>
     <url>/2019/12/17/array/</url>
     <content><![CDATA[<p> 数组方法总结&amp;es6新增API</p>
 <a id="more"></a>
@@ -477,7 +529,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="Array-push-pop-shift-unshift"><a href="#Array-push-pop-shift-unshift" class="headerlink" title="Array.push()/ .pop()/ .shift()/ .unshift()"></a>Array.push()/ .pop()/ .shift()/ .unshift()</h2><table>
+<h2 id="Array-push-pop-shift-unshift"><a href="#Array-push-pop-shift-unshift" class="headerlink" title="Array.push()/ .pop()/ .shift()/ .unshift()"></a>Array.push()/ .pop()/ .shift()/ .unshift()</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>方法</th>
@@ -508,6 +561,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 ]]></content>
       <categories>
         <category>js</category>
@@ -521,7 +575,8 @@
     <url>/2019/10/01/resume/</url>
     <content><![CDATA[<p>个人简历</p>
 <a id="more"></a> 
-<h2 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h2><table>
+<h2 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>姓名</th>
@@ -533,7 +588,7 @@
 <tbody>
 <tr>
 <td>邮箱</td>
-<td><a href="mailto:liuc0704@outlook.com" target="_blank" rel="noopener">liuc0704@outlook.com</a></td>
+<td>liuc0704@outlook.com</td>
 <td>应聘职位</td>
 <td>前端工程师/JS工程师</td>
 </tr>
@@ -563,6 +618,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><ul>
 <li>精通HTML/CSS</li>
 <li>精通JavaScript</li>
@@ -571,7 +627,8 @@
 <li>良好的英语技能</li>
 <li>对研发及团队管理十分感兴趣。工作态度认真仔细，做事严谨，自信心强并且自我要求严格，为人开朗热情，具有团队意识，具有很好的沟通能力</li>
 </ul>
-<h4 id="参与过的Web项目"><a href="#参与过的Web项目" class="headerlink" title="参与过的Web项目"></a>参与过的Web项目</h4><table>
+<h4 id="参与过的Web项目"><a href="#参与过的Web项目" class="headerlink" title="参与过的Web项目"></a>参与过的Web项目</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>项目</th>
@@ -597,13 +654,15 @@
 </tr>
 </tbody>
 </table>
+</div>
 <ul>
 <li>后端 JAVA+Tomcat+mybatis+spring+mysql</li>
 <li>前端 AngularJS</li>
 <li>乐伏光伏大数据智慧管理平台</li>
 <li>负责：前端页面CSS/DIV编写，JS编写，整体负责前端框架。<br>采用前后端完全分离的架构。前端采用AngularJS框架，通过AJAX请求与后端交互；同时引入百度地图插件和highcharts图表插件来丰富网站内容。</li>
 </ul>
-<h4 id="参与过的App项目"><a href="#参与过的App项目" class="headerlink" title="参与过的App项目"></a>参与过的App项目</h4><table>
+<h4 id="参与过的App项目"><a href="#参与过的App项目" class="headerlink" title="参与过的App项目"></a>参与过的App项目</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>项目</th>
@@ -625,6 +684,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <ul>
 <li>前端 AngularJS</li>
 <li>乐伏管家App</li>
@@ -702,7 +762,8 @@
 <h2 id="薪资"><a href="#薪资" class="headerlink" title="薪资"></a>薪资</h2><ul>
 <li>目前薪资  12000 * 12 （税前）</li>
 </ul>
-<h2 id="语言能力"><a href="#语言能力" class="headerlink" title="语言能力"></a>语言能力</h2><table>
+<h2 id="语言能力"><a href="#语言能力" class="headerlink" title="语言能力"></a>语言能力</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th></th>
@@ -723,7 +784,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="证书"><a href="#证书" class="headerlink" title="证书"></a>证书</h2><table>
+</div>
+<h2 id="证书"><a href="#证书" class="headerlink" title="证书"></a>证书</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>类别</th>
@@ -749,6 +812,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 ]]></content>
       <categories>
         <category>个人</category>
@@ -817,7 +881,7 @@
 <li><strong>隐式转化</strong>   ，== 加减运算 关系操作符 逻辑操作符</li>
 </ul>
 <h2 id="Vue-取消事件冒泡"><a href="#Vue-取消事件冒泡" class="headerlink" title="Vue 取消事件冒泡"></a>Vue 取消事件冒泡</h2><ul>
-<li>vue取消事件冒泡<br><code></code><div @click.stop="doSomething($event)">vue取消事件冒泡</div></li>
+<li>vue取消事件冒泡<br>``<div @click.stop="doSomething($event)">vue取消事件冒泡</div></li>
 <li>vue阻止默认事件<br><code>&lt;div @click.prevent=&quot;doSomething($event)&quot;&gt;vue阻止默认事件&lt;/div&gt;</code></li>
 <li>js 防止冒泡和捕获<br>w3c的方法是e.stopPropagation()，IE则是使用e.cancelBubble = true</li>
 <li>取消默认事件<br>w3c的方法是e.preventDefault()，IE则是使用e.returnValue = false;</li>
@@ -844,7 +908,7 @@
 </li>
 <li><p>cookie的path属性:默认情况下,在同一个目录下文件可以调用; 例如:<a href="http://demo.com/c1/1.html" target="_blank" rel="noopener">http://demo.com/c1/1.html</a> 设置的cookie可以被<a href="http://demo.com/c1/2.html调用.但不能被http://demo.com/c2/" target="_blank" rel="noopener">http://demo.com/c1/2.html调用.但不能被http://demo.com/c2/</a> 目录下的文件调用; 但如把path属性设成”/“;则在<a href="http://demo.com/" target="_blank" rel="noopener">http://demo.com/</a> 下的所有文件都可调用此cookie.</p>
 </li>
-<li><p>cookie的domain属性:例如设成”.demo.com”则在.demo.com(“<a href="http://a.demo.com&quot;" target="_blank" rel="noopener">http://a.demo.com&quot;</a> 和 “<a href="http://b.demo.com&quot;)下的所有服务器下的文件都可以调用cookie" target="_blank" rel="noopener">http://b.demo.com&quot;)下的所有服务器下的文件都可以调用cookie</a>.</p>
+<li><p>cookie的domain属性:例如设成”.demo.com”则在.demo.com(“<a href="http://a.demo.com" target="_blank" rel="noopener">http://a.demo.com</a>“ 和 “<a href="http://b.demo.com&quot;)下的所有服务器下的文件都可以调用cookie" target="_blank" rel="noopener">http://b.demo.com&quot;)下的所有服务器下的文件都可以调用cookie</a>.</p>
 </li>
 </ul>
 <p>WebStorage 支持事件通知机制，可以将数据更新的通知发送给监听者。Web Storage 的 api 接口使用更方便。</p>
@@ -1064,8 +1128,8 @@
         <category>笔记【css世界】</category>
       </categories>
       <tags>
-        <tag>css</tag>
         <tag>浮动</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -1189,7 +1253,7 @@
     <title>5、内联元素与流</title>
     <url>/2018/05/07/cssworld-line-height/</url>
     <content><![CDATA[<p>line-height相关知识。<br><a id="more"></a></p>
-<h2 id="5-1-字母x–CSS世界中隐匿的举足轻重的角色"><a href="#5-1-字母x–CSS世界中隐匿的举足轻重的角色" class="headerlink" title="5.1 字母x–CSS世界中隐匿的举足轻重的角色"></a>5.1 字母x–CSS世界中隐匿的举足轻重的角色</h2><h3 id="5-1-1-字母x与CSS世界的基线"><a href="#5-1-1-字母x与CSS世界的基线" class="headerlink" title="5.1.1 字母x与CSS世界的基线"></a>5.1.1 字母x与CSS世界的基线</h3><p>字母x的下边缘是css世界的基线</p>
+<h2 id="5-1-字母x—CSS世界中隐匿的举足轻重的角色"><a href="#5-1-字母x—CSS世界中隐匿的举足轻重的角色" class="headerlink" title="5.1 字母x—CSS世界中隐匿的举足轻重的角色"></a>5.1 字母x—CSS世界中隐匿的举足轻重的角色</h2><h3 id="5-1-1-字母x与CSS世界的基线"><a href="#5-1-1-字母x与CSS世界的基线" class="headerlink" title="5.1.1 字母x与CSS世界的基线"></a>5.1.1 字母x与CSS世界的基线</h3><p>字母x的下边缘是css世界的基线</p>
 <h3 id="5-1-2-字母x与CSS中x-height"><a href="#5-1-2-字母x与CSS中x-height" class="headerlink" title="5.1.2 字母x与CSS中x-height"></a>5.1.2 字母x与CSS中x-height</h3><ul>
 <li>x-height: 小写字母x的高度也就是ex。ex是css中的一个相对单位。</li>
 <li><code>vertical-align:middle</code> middle是指基线往上1/2处x-height的高度。可以近似理解x交叉点的位置。</li>
@@ -1208,7 +1272,7 @@
 <li>“近似”是因为文字字形的垂直中线位置普遍要比真正的“行框盒子”的垂直中线位置低</li>
 </ul>
 <p>实现多行文本或者替换元素的垂直居中需要line-height和vertical-align共同设置</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-class">.box</span> &#123;</span></span><br><span class="line"><span class="undefined">    width: 200px;</span></span><br><span class="line"><span class="undefined">    line-height: 120px;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span>: <span class="selector-id">#f0f0f9</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="css"><span class="selector-class">.content</span> &#123;</span></span><br><span class="line"><span class="undefined">    display: inline-block;</span></span><br><span class="line"><span class="undefined">    line-height: 20px;</span></span><br><span class="line"><span class="undefined">    margin: 0 20px;</span></span><br><span class="line"><span class="undefined">    vertical-align: middle;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span>基于行高实现的。。。基于行高实现的。。。<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">.box &#123;</span></span><br><span class="line"><span class="undefined">    width: 200px;</span></span><br><span class="line"><span class="undefined">    line-height: 120px;</span></span><br><span class="line"><span class="undefined">    background-color: #f0f0f9;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">.content &#123;</span></span><br><span class="line"><span class="undefined">    display: inline-block;</span></span><br><span class="line"><span class="undefined">    line-height: 20px;</span></span><br><span class="line"><span class="undefined">    margin: 0 20px;</span></span><br><span class="line"><span class="undefined">    vertical-align: middle;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span>基于行高实现的。。。基于行高实现的。。。<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>多行文字使用一个标签包裹，然后设置display为inline-block。可以重置外部的line-height，还可以设置vertical-align属性，以及产生一个关键的“行框盒子”。由于每个“行框盒子”都会附带的产物——“幽灵空白节点”，有了这个节点，我们的line-height:120px就有了作用对象</li>
 <li>因为内联元素默认都是基线对齐的，所以对.content元素设置vertical-align:middle来调整多行文本的垂直位置。</li>
@@ -1408,7 +1472,8 @@
     <url>/2018/02/01/reg/</url>
     <content><![CDATA[<p>将常用的正则表达式整理如下。</p>
 <a id="more"></a> 
-<h1 id="常用正则表达式整理"><a href="#常用正则表达式整理" class="headerlink" title="常用正则表达式整理"></a>常用正则表达式整理</h1><h2 id="正则元字符"><a href="#正则元字符" class="headerlink" title="正则元字符"></a>正则元字符</h2><table>
+<h1 id="常用正则表达式整理"><a href="#常用正则表达式整理" class="headerlink" title="常用正则表达式整理"></a>常用正则表达式整理</h1><h2 id="正则元字符"><a href="#正则元字符" class="headerlink" title="正则元字符"></a>正则元字符</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>字符</th>
@@ -1430,6 +1495,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h2 id="整数-不限制正负"><a href="#整数-不限制正负" class="headerlink" title="整数(不限制正负)"></a>整数(不限制正负)</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/^-?\d+$/; <span class="comment">// 不限制长度</span></span><br></pre></td></tr></table></figure>
 <h2 id="整数-gt-0"><a href="#整数-gt-0" class="headerlink" title="整数(&gt; 0)"></a>整数(&gt; 0)</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/^[<span class="number">1</span><span class="number">-9</span>]\d*$/; <span class="comment">// 不限制长度</span></span><br><span class="line">/^[<span class="number">1</span><span class="number">-9</span>]\d&#123;<span class="number">0</span>,<span class="number">5</span>&#125;$/;<span class="comment">// 限制长度</span></span><br></pre></td></tr></table></figure>
 <h2 id="整数-gt-0-amp-amp-lt-100"><a href="#整数-gt-0-amp-amp-lt-100" class="headerlink" title="整数(&gt; 0 &amp;&amp; &lt;= 100)"></a>整数(&gt; 0 &amp;&amp; &lt;= 100)</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">/^(<span class="number">100</span>|([<span class="number">1</span><span class="number">-9</span>]&#123;<span class="number">1</span>&#125;\d?))$/</span><br></pre></td></tr></table></figure>
@@ -1451,7 +1517,7 @@
   </entry>
   <entry>
     <title>学以致用系列之Array</title>
-    <url>/2018/01/28/jsArray/</url>
+    <url>/2018/01/28/js-array/</url>
     <content><![CDATA[<p>改造一下之前ng中checkbox全选和选不选的js。</p>
 <a id="more"></a>
 <h2 id="一行代码搞定Array的深拷贝"><a href="#一行代码搞定Array的深拷贝" class="headerlink" title="一行代码搞定Array的深拷贝"></a>一行代码搞定Array的深拷贝</h2><figure class="highlight haskell"><table><tr><td class="code"><pre><span class="line"><span class="title">var</span> <span class="class"><span class="keyword">data</span> = <span class="keyword">data</span>.conact(); // js contacat() 方法会返回一个新的数组。tips：原数组中如有对象,还是不能做到完全的深拷贝。</span></span><br><span class="line"><span class="title">var</span> <span class="class"><span class="keyword">data</span> = <span class="keyword">data</span>.splice(); //同上</span></span><br></pre></td></tr></table></figure>
@@ -1586,7 +1652,7 @@
   </entry>
   <entry>
     <title>Ng-repeat下ng-model与对象拷贝的简单分析</title>
-    <url>/2017/03/09/ngRepeat/</url>
+    <url>/2017/03/09/ng-repeat/</url>
     <content><![CDATA[<p>关于对象的总结</p>
 <a id="more"></a>
 <h2 id="ng-model绑定到-parent上"><a href="#ng-model绑定到-parent上" class="headerlink" title="ng-model绑定到$parent上"></a>ng-model绑定到$parent上</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span> <span class="attr">ng-bind</span>=<span class="string">"radio"</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"x in records"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"radio"</span> <span class="attr">ng-model</span>=<span class="string">"radio"</span> <span class="attr">value</span>=<span class="string">"&#123;&#123;x&#125;&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">ng-bind</span>=<span class="string">"x"</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -1616,7 +1682,8 @@
     <url>/2017/02/28/ng-form/</url>
     <content><![CDATA[<p>form表单提交之前的验证操作以及对form表单中单选框和多选框的值获取</p>
 <a id="more"></a>
-<h2 id="Form-表单的状态"><a href="#Form-表单的状态" class="headerlink" title="Form 表单的状态"></a>Form 表单的状态</h2><table>
+<h2 id="Form-表单的状态"><a href="#Form-表单的状态" class="headerlink" title="Form 表单的状态"></a>Form 表单的状态</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th style="text-align:left">属性类</th>
@@ -1647,6 +1714,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h2 id="设置Form表单"><a href="#设置Form表单" class="headerlink" title="设置Form表单"></a>设置Form表单</h2><p>如果我们使用 novalidate 将不使用html5的表单验证而是使用我们自己的验证<br>注意我们把表单提交事件绑定到form的ng-submit上并且判断表单是否合法<code>userForm.$valid</code></p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">"useform"</span> </span></span><br><span class="line"><span class="tag">       <span class="attr">novalidate</span> </span></span><br><span class="line"><span class="tag">       <span class="attr">autocomplete</span>=<span class="string">"off"</span> </span></span><br><span class="line"><span class="tag">       <span class="attr">ng-submit</span>=<span class="string">"userForm.$valid &amp;&amp; submitForm()"</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- form 表单一定要有name属性 通过name属性访问表单 input也是如此 同时关闭表单自动填充以及h5 浏览器自带验证方法 --&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="当表单不合法禁用提交按钮"><a href="#当表单不合法禁用提交按钮" class="headerlink" title="当表单不合法禁用提交按钮"></a>当表单不合法禁用提交按钮</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn btn-danger m-t"</span> <span class="attr">ng-disabled</span>=<span class="string">"useform.$invalid"</span>&gt;</span>提交!<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -1704,6 +1772,7 @@
     <content><![CDATA[<p>分析cookie localStroage sessionStorage 之间的特点选择更适合的方式来存储页面之间的交换信息。</p>
 <a id="more"></a>
 <h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h2><p>优点：历史悠久,浏览器支持率高。但是cookie在存储空间上有一些限制。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -1735,6 +1804,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h3 id="Cookie-4-个属性"><a href="#Cookie-4-个属性" class="headerlink" title="Cookie 4 个属性"></a>Cookie 4 个属性</h3><ol>
 <li><p>cookie的生存期属性:expires;默认情况下,cookie只在浏览器会话期存在.退出浏览器就丢失;可以用expires设置时间;退出浏览器后就不会丢失并存为客户端浏览器的cookie文件;过了时间后cookie失效,还会自动删除cookie文件. </p>
 </li>
@@ -1780,8 +1850,6 @@
       </categories>
       <tags>
         <tag>cookie</tag>
-        <tag>localStroage</tag>
-        <tag>sessionStorage</tag>
       </tags>
   </entry>
   <entry>
@@ -1947,6 +2015,25 @@
     <url>/2017/01/31/hexo-github/</url>
     <content><![CDATA[<p>如果你对个人博客感兴趣想拥有一个属于自己的网站，对markdown语法有了解，有自己的github账号，平时习惯用markdown记笔记。那么用hexo来打造自己的个人网站就很容易上手了。</p>
 <a id="more"></a>
+<h2 id="202002更新"><a href="#202002更新" class="headerlink" title="202002更新"></a>202002更新</h2><p>2020年2月中下旬开工，适逢疫情影响，工作尚在空档期，准备整理更新自己写的文章并且优化一下博客功能。本次更新如下</p>
+<ul>
+<li>功能<ol>
+<li>开启站内搜索功能</li>
+<li>文章添加分类（区别于标签）</li>
+<li>添加文章字数统计，阅读量等小功能</li>
+<li>标签改成标签云展示</li>
+<li>Valine + LearnCloud 开启留言功能</li>
+<li>PC端和移动端的目录微调（详见base.pug）</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>文章<ol>
+<li>更新【css世界】读书笔记</li>
+<li>更新【你不知道的js】读书笔记</li>
+</ol>
+</li>
+</ul>
 <h2 id="主要流程"><a href="#主要流程" class="headerlink" title="主要流程"></a>主要流程</h2><ol>
 <li>安装并配置hexo</li>
 <li>github新建仓库并上传</li>

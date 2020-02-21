@@ -382,6 +382,8 @@ div {
   #header .site-name {
     margin-bottom: 20px;
     text-align: center; }
+    #header .site-name .description {
+      padding-bottom: .5em; }
   #header #nav-menu {
     display: none; }
   #header #nav-mobile-menu {
@@ -1496,3 +1498,11 @@ em.search-keyword {
   list-style: none; }
   .post-copyright li {
     margin: 8px 0; }
+
+.leancloud_visitors {
+  padding: 0;
+  margin: 15px 0 0;
+  color: #6E7173;
+  float: left;
+  display: inline;
+  text-indent: .15em; }

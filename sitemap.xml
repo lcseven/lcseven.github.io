@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://liuchao0704.github.io/2020/02/21/werewolf/</loc>
+    
+    <lastmod>2020-02-21T00:53:33.182Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/03/09/ng-repeat/</loc>
+    
+    <lastmod>2020-02-21T00:24:26.167Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2018/01/28/js-array/</loc>
+    
+    <lastmod>2020-02-21T00:24:13.076Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2020/02/10/float/</loc>
+    
+    <lastmod>2020-02-21T00:23:04.155Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2019/12/21/string&number/</loc>
+    
+    <lastmod>2020-02-21T00:21:24.376Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2020/01/30/nativeFunc/</loc>
+    
+    <lastmod>2020-02-21T00:21:01.903Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/02/15/cookie/</loc>
+    
+    <lastmod>2020-02-21T00:20:24.507Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2019/12/17/array/</loc>
+    
+    <lastmod>2020-02-20T03:56:00.944Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuchao0704.github.io/2017/01/31/hexo-github/</loc>
+    
+    <lastmod>2020-02-20T03:44:26.032Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://liuchao0704.github.io/2018/05/06/cssworld-box/</loc>
     
     <lastmod>2020-02-20T01:59:15.184Z</lastmod>
@@ -16,20 +79,6 @@
   </url>
   
   <url>
-    <loc>https://liuchao0704.github.io/2020/02/10/float/</loc>
-    
-    <lastmod>2020-02-20T01:49:13.223Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2017/02/15/cookie/</loc>
-    
-    <lastmod>2020-02-19T06:49:38.739Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://liuchao0704.github.io/2019/04/05/hdnj-sw01/</loc>
     
     <lastmod>2020-02-19T06:48:59.578Z</lastmod>
@@ -37,23 +86,9 @@
   </url>
   
   <url>
-    <loc>https://liuchao0704.github.io/2017/01/31/hexo-github/</loc>
-    
-    <lastmod>2020-02-19T06:48:53.617Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://liuchao0704.github.io/2019/01/01/nodejs/</loc>
     
     <lastmod>2020-02-19T06:48:45.359Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2017/03/09/ngRepeat/</loc>
-    
-    <lastmod>2020-02-19T06:48:29.422Z</lastmod>
     
   </url>
   
@@ -121,20 +156,6 @@
   </url>
   
   <url>
-    <loc>https://liuchao0704.github.io/2020/01/30/nativeFunc/</loc>
-    
-    <lastmod>2020-02-19T04:08:46.294Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2019/12/21/string&number/</loc>
-    
-    <lastmod>2020-02-19T04:08:37.455Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://liuchao0704.github.io/2020/01/12/casts/</loc>
     
     <lastmod>2020-02-19T04:08:25.414Z</lastmod>
@@ -166,13 +187,6 @@
     <loc>https://liuchao0704.github.io/2018/04/16/cssworld-index/</loc>
     
     <lastmod>2020-02-19T04:07:33.557Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2018/01/28/jsArray/</loc>
-    
-    <lastmod>2020-02-19T03:54:40.470Z</lastmod>
     
   </url>
   
@@ -215,13 +229,6 @@
     <loc>https://liuchao0704.github.io/2017/02/12/gulpAuto/</loc>
     
     <lastmod>2020-02-19T03:29:46.241Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuchao0704.github.io/2019/12/17/array/</loc>
-    
-    <lastmod>2020-02-19T03:27:03.094Z</lastmod>
     
   </url>
   
