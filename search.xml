@@ -168,7 +168,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <h2 id="拆封"><a href="#拆封" class="headerlink" title="拆封"></a>拆封</h2><p>如果想要得到封装对象中的基本类型值，可以使用valueOf()函数</p>
 ]]></content>
       <categories>
-        <category>笔记【你不知道的js】</category>
+        <category>笔记-你不知道的js</category>
       </categories>
       <tags>
         <tag>原生函数</tag>
@@ -329,7 +329,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 </ul>
 ]]></content>
       <categories>
-        <category>笔记【你不知道的js】</category>
+        <category>笔记-你不知道的js</category>
       </categories>
       <tags>
         <tag>类型转换</tag>
@@ -408,7 +408,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 </ul>
 ]]></content>
       <categories>
-        <category>笔记【你不知道的js】</category>
+        <category>笔记-你不知道的js</category>
       </categories>
       <tags>
         <tag>string</tag>
@@ -1125,7 +1125,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <p><img src="https://liuchao-0704-1258039511.cos.ap-chengdu.myqcloud.com/css/cssworld/float.jpg" alt=""></p>
 ]]></content>
       <categories>
-        <category>笔记【css世界】</category>
+        <category>笔记-css世界</category>
       </categories>
       <tags>
         <tag>浮动</tag>
@@ -1185,7 +1185,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <h2 id="作用域闭包"><a href="#作用域闭包" class="headerlink" title="作用域闭包"></a>作用域闭包</h2><h3 id="5-2-启示"><a href="#5-2-启示" class="headerlink" title="5.2 启示"></a>5.2 启示</h3><p>当函数可以记住并访问所在的词法作用域时，就产生了闭包<br>函数在定义时的词法作用域以外的地方被调用，但是依然持有对该作用域的引用。这个引用就是闭包。<br>闭包主要例子模块</p>
 ]]></content>
       <categories>
-        <category>笔记【你不知道的js】</category>
+        <category>笔记-你不知道的js</category>
       </categories>
       <tags>
         <tag>scope</tag>
@@ -1241,9 +1241,9 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 </ul>
 </li>
 </ul>
-<h2 id="原生函数"><a href="#原生函数" class="headerlink" title="原生函数"></a>原生函数</h2><h2 id="强制类型转化"><a href="#强制类型转化" class="headerlink" title="强制类型转化"></a>强制类型转化</h2><h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a><a href="https://liuchao0704.github.io/2018/10/07/you-dont-know-js-scope/">作用域</a></h2><h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><h2 id="异步"><a href="#异步" class="headerlink" title="异步"></a>异步</h2><h2 id="回调"><a href="#回调" class="headerlink" title="回调"></a>回调</h2><h2 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h2><h2 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h2>]]></content>
+<h2 id="原生函数"><a href="#原生函数" class="headerlink" title="原生函数"></a>原生函数</h2><h2 id="强制类型转化"><a href="#强制类型转化" class="headerlink" title="强制类型转化"></a>强制类型转化</h2><h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a><a href="https://liuchao0704.github.io/2018/10/07/you-dont-know-js-scope/" target="_blank" rel="noopener">作用域</a></h2><h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><h2 id="异步"><a href="#异步" class="headerlink" title="异步"></a>异步</h2><h2 id="回调"><a href="#回调" class="headerlink" title="回调"></a>回调</h2><h2 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h2><h2 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h2>]]></content>
       <categories>
-        <category>笔记【你不知道的js】</category>
+        <category>笔记-你不知道的js</category>
       </categories>
       <tags>
         <tag>目录</tag>
@@ -1294,7 +1294,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 </ul>
 ]]></content>
       <categories>
-        <category>笔记【css世界】</category>
+        <category>笔记-css世界</category>
       </categories>
       <tags>
         <tag>css</tag>
@@ -1313,7 +1313,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <li>有自己的尺寸</li>
 <li>在很多css属性上有自己的一套表现规则</li>
 </ul>
-<h3 id="替换元素的默认的display值"><a href="#替换元素的默认的display值" class="headerlink" title="替换元素的默认的display值"></a>替换元素的默认的display值</h3><p>所有的替换元素都是内联水平元素。替换元素的display值对于其尺寸计算规则无影响。</p>
+<h3 id="替换元素的默认的display值"><a href="#替换元素的默认的display值" class="headerlink" title="替换元素的默认的display值"></a>替换元素的默认的display值</h3><p>所有的替换元素都是内联水平元素,替换元素的display值对于其尺寸计算规则无影响。</p>
 <h3 id="替换元素的尺寸计算规则"><a href="#替换元素的尺寸计算规则" class="headerlink" title="替换元素的尺寸计算规则"></a>替换元素的尺寸计算规则</h3><p>替换元素的尺寸：固有尺寸、HTML尺寸、CSS尺寸</p>
 <ul>
 <li>如果没有CSS尺寸和HTML尺寸则使用固有尺寸作为最终的宽高</li>
@@ -1367,7 +1367,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <p> <img src="https://liuchao-0704-1258039511.cos.ap-chengdu.myqcloud.com/css/cssworld/equalHeight2.png" alt=""><br> <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-class">.margin-box</span> &#123;</span></span><br><span class="line"><span class="undefined">        overflow: hidden;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.column-left</span> ,<span class="selector-class">.column-right</span> &#123;</span></span><br><span class="line"><span class="undefined">        width: 50%;</span></span><br><span class="line"><span class="undefined">        float: left;</span></span><br><span class="line"><span class="undefined">        padding-bottom: 9999px;</span></span><br><span class="line"><span class="undefined">        margin-bottom: -9999px;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.column-left</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">background-color</span>: <span class="selector-id">#c7c7c7</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.column-right</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">background-color</span>: <span class="selector-id">#f1f1f1</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"> <span class="comment">&lt;!-- margin + padding 等高布局 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"margin-box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"column-left"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span>&gt;</span>导航1<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span>&gt;</span>导航2<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"column-right"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h4</span>&gt;</span>模块1<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 ]]></content>
       <categories>
-        <category>笔记【css世界】</category>
+        <category>笔记-css世界</category>
       </categories>
       <tags>
         <tag>css</tag>
@@ -1381,16 +1381,20 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <h2 id="3-1-块级盒子（认识各种盒子）"><a href="#3-1-块级盒子（认识各种盒子）" class="headerlink" title="3.1 块级盒子（认识各种盒子）"></a>3.1 块级盒子（认识各种盒子）</h2><p>根据整个第三章第四章以及第五章的内容，将盒子模型之间的关系画了一个总的示意图。 </p>
 <p><img src="https://liuchao-0704-1258039511.cos.ap-chengdu.myqcloud.com/css/cssworld/box1.jpg" alt=""></p>
 <h2 id="3-2-width-height-作用的具体细节"><a href="#3-2-width-height-作用的具体细节" class="headerlink" title="3.2 width/height 作用的具体细节"></a>3.2 width/height 作用的具体细节</h2><h3 id="3-2-1-width-auto属性"><a href="#3-2-1-width-auto属性" class="headerlink" title="3.2.1 width:auto属性"></a>3.2.1 width:auto属性</h3><ul>
-<li><p>充分利用可用空间 <code>&lt;div</code>&gt; ,<code>&lt;p&gt;</code>这些元素默认宽度100%充满父级 （外部尺寸）</p>
-</li>
-<li><p>收缩与包裹性  （内部尺寸）</p>
-</li>
-<li><p>收缩到最小 （内部尺寸）</p>
-</li>
-<li><p>超出容器限制 （内部尺寸）</p>
+<li><strong>外部尺寸</strong>：宽度由外部元素决定<ul>
+<li>充分利用可用空间 <code>&lt;div</code>&gt; ,<code>&lt;p&gt;</code>这些元素默认宽度100%充满父级 </li>
+<li>格式化宽度 </li>
+</ul>
 </li>
 </ul>
-<h3 id="“外部尺寸”与“内部尺寸”"><a href="#“外部尺寸”与“内部尺寸”" class="headerlink" title="“外部尺寸”与“内部尺寸”"></a>“外部尺寸”与“内部尺寸”</h3><p>   外部尺寸：宽度由外部元素决定<br>   内部尺寸：宽度由内部元素决定 如果一个元素里面没有内容宽度为0， 那么这个元素应用的就是“内部尺寸”</p>
+<ul>
+<li><strong>内部尺寸</strong>：宽度由内部元素决定 如果一个元素里面没有内容宽度为0， 那么这个元素应用的就是“内部尺寸”<ul>
+<li>收缩与包裹性 </li>
+<li>收缩到最小 </li>
+<li>超出容器限制 </li>
+</ul>
+</li>
+</ul>
 <h3 id="外部尺寸与流体特性"><a href="#外部尺寸与流体特性" class="headerlink" title="外部尺寸与流体特性"></a>外部尺寸与流体特性</h3><ol>
 <li><p>正常流宽度<br>在页面中随便扔一个<code>&lt;div&gt;</code>元素，其尺寸表现就会和这水流一样铺满容器，这就是<code>block</code>容器的流特性。</p>
 </li>
@@ -1409,7 +1413,10 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <h3 id="3-2-3-CSS流体布局下的宽度分离原则"><a href="#3-2-3-CSS流体布局下的宽度分离原则" class="headerlink" title="3.2.3 CSS流体布局下的宽度分离原则"></a>3.2.3 CSS流体布局下的宽度分离原则</h3><p> 不在同一层标签上设置width，padding。 width设置在父级标签上，子级标签设置padding,border属性。子级自适应父级宽度。</p>
 <h3 id="3-2-4-改变width作用细节的box-sizing"><a href="#3-2-4-改变width作用细节的box-sizing" class="headerlink" title="3.2.4 改变width作用细节的box-sizing"></a>3.2.4 改变width作用细节的box-sizing</h3><p> box-sizing被发明的初衷更大的可能是解决替换元素宽度自适应问题。原因替换元素的尺寸由内部元素决定对于其设置display属性是inline还是block,替换元素的宽度都不会受其影响。当替换元素设置<code>display:block</code>是无法让元素100%自适应父级。所以让textarea的width100%自适应父级，同时保留border,padding属性只能通过<code>box-sizing:border-box</code>来解决</p>
  <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> input ,textarea, img, video, object &#123;</span><br><span class="line">	box-sizing: border-box</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="3-2-6-height-100"><a href="#3-2-6-height-100" class="headerlink" title="3.2.6 height: 100%"></a>3.2.6 height: 100%</h3><p>如何让元素支持height:100%?  </p>
+<h3 id="3-2-6-height-100"><a href="#3-2-6-height-100" class="headerlink" title="3.2.6 height: 100%"></a>3.2.6 height: 100%</h3><blockquote>
+<p>父级没有具体高度的时候，height：100%会无效  </p>
+</blockquote>
+<p>如何让元素支持height:100%?  </p>
 <ul>
 <li>设定显示的高度</li>
 </ul>
@@ -1418,11 +1425,13 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <li>使用绝对定位   </li>
 </ul>
 <p>绝对定位元素百分比计算和非绝对定位元素的百分比计算是有区别的，区别在于绝对定位的宽高百分比计算是相对于padding box</p>
-<h2 id="3-3-CSSmin-width-max-width和min-height-max-height"><a href="#3-3-CSSmin-width-max-width和min-height-max-height" class="headerlink" title="3.3 CSSmin-width/max-width和min-height/max-height"></a>3.3 CSSmin-width/max-width和min-height/max-height</h2><h3 id="3-3-2-与众不同的初始值"><a href="#3-3-2-与众不同的初始值" class="headerlink" title="3.3.2 与众不同的初始值"></a>3.3.2 与众不同的初始值</h3><p>min-width/min-height的初始值为auto<br>max-width/max-height的初始值为none (思考为什么max的初始值为none 而不是auto)</p>
+<h2 id="3-3-CSSmin-width-max-width和min-height-max-height"><a href="#3-3-CSSmin-width-max-width和min-height-max-height" class="headerlink" title="3.3 CSSmin-width/max-width和min-height/max-height"></a>3.3 CSSmin-width/max-width和min-height/max-height</h2><h3 id="3-3-1-为流体而生的min-width-max-width"><a href="#3-3-1-为流体而生的min-width-max-width" class="headerlink" title="3.3.1 为流体而生的min-width/max-width"></a>3.3.1 为流体而生的min-width/max-width</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">   <span class="attribute">max-width</span>: <span class="number">100%</span>;</span><br><span class="line">   <span class="attribute">height</span>: auto<span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>height:auto</code>是必需的，否则如果原始图片没有设定height，max-width生效的时候，图片会被水平压缩。</p>
+<h3 id="3-3-2-与众不同的初始值"><a href="#3-3-2-与众不同的初始值" class="headerlink" title="3.3.2 与众不同的初始值"></a>3.3.2 与众不同的初始值</h3><p>min-width/min-height的初始值为auto<br>max-width/max-height的初始值为none (思考为什么max的初始值为none 而不是auto)</p>
 <h3 id="3-3-3-超越-important-超越最大"><a href="#3-3-3-超越-important-超越最大" class="headerlink" title="3.3.3 超越!important 超越最大"></a>3.3.3 超越!important 超越最大</h3><p>简单的来说min和max的权重比!important大。 如果min和max设置起冲突的时候。min-width 会覆盖max-width。</p>
 ]]></content>
       <categories>
-        <category>笔记【css世界】</category>
+        <category>笔记-css世界</category>
       </categories>
       <tags>
         <tag>css</tag>
@@ -1433,9 +1442,9 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
     <url>/2018/04/16/cssworld-index/</url>
     <content><![CDATA[<p>2018年2月份入手了《css世界》一书。打算过年内看完，但是翻阅之后决定作为工具书多次阅读并记笔记总结之，加深自己对css的理解。随着页面越来越个性化，我发现写一段易修改，可维护，代码量少的css相当重要。</p>
 <a id="more"></a>
-<h2 id="3-、流、元素、基本尺寸"><a href="#3-、流、元素、基本尺寸" class="headerlink" title="3 、流、元素、基本尺寸"></a><a href="https://liuchao0704.github.io/2018/05/06/cssworld-width/">3 、流、元素、基本尺寸</a></h2><h2 id="4、盒尺寸四大家族"><a href="#4、盒尺寸四大家族" class="headerlink" title="4、盒尺寸四大家族 "></a><a href="https://liuchao0704.github.io/2018/05/06/cssworld-box/">4、盒尺寸四大家族 </a></h2><h2 id="5、内联元素与流"><a href="#5、内联元素与流" class="headerlink" title="5、内联元素与流 "></a><a href="https://liuchao0704.github.io/2018/05/07/cssworld-line-height/">5、内联元素与流 </a></h2><h2 id="6、流的破坏与保护"><a href="#6、流的破坏与保护" class="headerlink" title="6、流的破坏与保护"></a><a href="https://liuchao0704.github.io/2018/11/0/cssworld-float/">6、流的破坏与保护</a></h2>]]></content>
+<h2 id="3-、流、元素、基本尺寸"><a href="#3-、流、元素、基本尺寸" class="headerlink" title="3 、流、元素、基本尺寸"></a><a href="https://liuchao0704.github.io/2018/05/06/cssworld-width/" target="_blank" rel="noopener">3 、流、元素、基本尺寸</a></h2><h2 id="4、盒尺寸四大家族"><a href="#4、盒尺寸四大家族" class="headerlink" title="4、盒尺寸四大家族 "></a><a href="https://liuchao0704.github.io/2018/05/06/cssworld-box/" target="_blank" rel="noopener">4、盒尺寸四大家族 </a></h2><h2 id="5、内联元素与流"><a href="#5、内联元素与流" class="headerlink" title="5、内联元素与流 "></a><a href="https://liuchao0704.github.io/2018/05/07/cssworld-line-height/" target="_blank" rel="noopener">5、内联元素与流 </a></h2><h2 id="6、流的破坏与保护"><a href="#6、流的破坏与保护" class="headerlink" title="6、流的破坏与保护"></a><a href="https://liuchao0704.github.io/2018/11/0/cssworld-float/" target="_blank" rel="noopener">6、流的破坏与保护</a></h2>]]></content>
       <categories>
-        <category>笔记【css世界】</category>
+        <category>笔记-css世界</category>
       </categories>
       <tags>
         <tag>目录</tag>
@@ -1522,7 +1531,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <a id="more"></a>
 <h2 id="一行代码搞定Array的深拷贝"><a href="#一行代码搞定Array的深拷贝" class="headerlink" title="一行代码搞定Array的深拷贝"></a>一行代码搞定Array的深拷贝</h2><figure class="highlight haskell"><table><tr><td class="code"><pre><span class="line"><span class="title">var</span> <span class="class"><span class="keyword">data</span> = <span class="keyword">data</span>.conact(); // js contacat() 方法会返回一个新的数组。tips：原数组中如有对象,还是不能做到完全的深拷贝。</span></span><br><span class="line"><span class="title">var</span> <span class="class"><span class="keyword">data</span> = <span class="keyword">data</span>.splice(); //同上</span></span><br></pre></td></tr></table></figure>
 <h2 id="数组的过滤-filter"><a href="#数组的过滤-filter" class="headerlink" title="数组的过滤 filter()"></a>数组的过滤 filter()</h2><p>原来我操作的数组的思路是循环数组找到index,然后用数组的splice(index, 1)删除。其实就是filter()应该干的事情。</p>
-<h2 id="改写Angular-JS动态控制多选框"><a href="#改写Angular-JS动态控制多选框" class="headerlink" title="改写Angular JS动态控制多选框"></a>改写Angular JS动态控制多选框</h2><p><a href="https://liuchao0704.github.io/2017/04/10/multiselect/">点击查看</a></p>
+<h2 id="改写Angular-JS动态控制多选框"><a href="#改写Angular-JS动态控制多选框" class="headerlink" title="改写Angular JS动态控制多选框"></a>改写Angular JS动态控制多选框</h2><p><a href="https://liuchao0704.github.io/2017/04/10/multiselect/" target="_blank" rel="noopener">点击查看</a></p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;script src=<span class="string">"angular-1.3.0.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span> </span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp">&lt;body ng-app="myApp" ng-controller="vipApplyEditCtrl"&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;div&gt;  </span></span><br><span class="line"><span class="regexp">     &lt;input </span></span><br><span class="line"><span class="regexp">          type="checkbox" </span></span><br><span class="line"><span class="regexp">          name="all" </span></span><br><span class="line"><span class="regexp">          ng-model="all"</span></span><br><span class="line"><span class="regexp">          ng-change="toSelectAll(all)"&gt; 全选 </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    &lt;i&gt;&#123;&#123;all&#125;&#125;&lt;/i</span>&gt;</span><br><span class="line">    &lt;div ng-repeat=<span class="string">"color in colors"</span>&gt;  </span><br><span class="line">        &lt;input </span><br><span class="line">              type=<span class="string">"checkbox"</span> </span><br><span class="line">              ng-checked=<span class="string">"color.checked == true"</span>   </span><br><span class="line">              ng-click=<span class="string">"updateSelection(color)"</span> </span><br><span class="line">              /&gt;</span><br><span class="line">              &#123;&#123;color.name&#125;&#125;  </span><br><span class="line">    &lt;<span class="regexp">/div&gt;  </span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">    Selected :&#123;&#123;selected&#125;&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;  </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">var app = angular.module('myApp', []);</span></span><br><span class="line"><span class="regexp">app.controller("vipApplyEditCtrl", function($scope) &#123;  </span></span><br><span class="line"><span class="regexp">    $scope.formData = &#123;&#125;;</span></span><br><span class="line"><span class="regexp">    $scope.colors = [  </span></span><br><span class="line"><span class="regexp">        &#123;id : 1, name : 'black'&#125;,  </span></span><br><span class="line"><span class="regexp">        &#123;id : 2, name : 'red'&#125;,  </span></span><br><span class="line"><span class="regexp">        &#123;id : 3, name : 'blue'&#125;,  </span></span><br><span class="line"><span class="regexp">        &#123;id : 4, name : 'yellow'&#125;,  </span></span><br><span class="line"><span class="regexp">        &#123;id : 5, name : 'green'&#125;,  </span></span><br><span class="line"><span class="regexp">        &#123;id : 6, name : 'white'&#125;  </span></span><br><span class="line"><span class="regexp">    ] ;  </span></span><br><span class="line"><span class="regexp">      </span></span><br><span class="line"><span class="regexp">     $scope.selected = [] ;  /</span><span class="regexp">/ 存放新的已选数据 </span></span><br><span class="line"><span class="regexp">     $scope.updateSelection = function(obj)&#123;  </span></span><br><span class="line"><span class="regexp">        obj.checked = !obj.checked;</span></span><br><span class="line"><span class="regexp">        $scope.selected = [] ; </span></span><br><span class="line"><span class="regexp">         $scope.colors.forEach(function(item)&#123;</span></span><br><span class="line"><span class="regexp">            if(item.checked)&#123;</span></span><br><span class="line"><span class="regexp">                $scope.selected.push(item.id) ;</span></span><br><span class="line"><span class="regexp">            &#125;</span></span><br><span class="line"><span class="regexp">        &#125;)</span></span><br><span class="line"><span class="regexp">         $scope.colors.every(function(item)&#123;</span></span><br><span class="line"><span class="regexp">            return item.checked ;</span></span><br><span class="line"><span class="regexp">        &#125;)</span></span><br><span class="line"><span class="regexp">    &#125;;</span></span><br><span class="line"><span class="regexp">     $scope.toSelectAll = function(flag)&#123;</span></span><br><span class="line"><span class="regexp">        $scope.selected = [];</span></span><br><span class="line"><span class="regexp">        $scope.colors.forEach(function(i)&#123;</span></span><br><span class="line"><span class="regexp">                 i.checked = flag;</span></span><br><span class="line"><span class="regexp">                 if(flag)$scope.selected.push(i.id);</span></span><br><span class="line"><span class="regexp">             &#125;)</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;);  </span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="一维数组分割成二维数组"><a href="#一维数组分割成二维数组" class="headerlink" title="一维数组分割成二维数组"></a>一维数组分割成二维数组</h2><p>目的 将一维数组按照既定的目标个数截取变成二维数组</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">      <span class="keyword">var</span> totalNum = <span class="number">23</span> ;<span class="comment">// 初始化一维数组</span></span><br><span class="line">      <span class="keyword">var</span> originArr = [];</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i&lt; totalNum; i++) &#123;</span><br><span class="line">        originArr.push(i)</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">var</span> result = []; <span class="comment">// 存放结果</span></span><br><span class="line">      <span class="keyword">var</span> index = <span class="number">0</span>; <span class="comment">// 存放二维标志位</span></span><br><span class="line">      <span class="keyword">var</span> targetNum = <span class="number">11</span>; <span class="comment">// 希望截取的个数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 方法一 index是一维变二维的关键标志位。</span></span><br><span class="line"><span class="comment">    标志位和 Math.floor (j / targetNum ) 恰好相同</span></span><br><span class="line"><span class="comment">    如果二维数组还未初始化，初始化二维数组为空数组待用。</span></span><br><span class="line"><span class="comment">    标志位相同的个体都是同一个二维数组成员，push到同一个result[index]里面</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      </span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">var</span> j=<span class="number">0</span>; j&lt; originArr.length;j++) &#123;</span><br><span class="line">        index = <span class="built_in">Math</span>.floor (j / targetNum )</span><br><span class="line">        <span class="keyword">if</span>(!result[index])&#123;</span><br><span class="line">          result[index] = []</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">       result[index].push(j)</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法二</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> j=<span class="number">0</span>; j&lt; originArr.length;j=j+targetNum)&#123;</span><br><span class="line">   <span class="keyword">var</span> curArr = originArr.slice(j,j+targetNum);</span><br><span class="line">   result.push(curArr)</span><br><span class="line">&#125;</span><br><span class="line">   <span class="built_in">console</span>.log(result)</span><br></pre></td></tr></table></figure>
@@ -1567,7 +1576,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> /&gt;</span></span><br><span class="line"> <span class="comment">&lt;!-- ios自动识别数字为电话号码导致页面错位 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"format-detection"</span> <span class="attr">content</span>=<span class="string">"telephone=no"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="input-typr-radio-表现怪异"><a href="#input-typr-radio-表现怪异" class="headerlink" title="input[typr=radio]表现怪异"></a>input[typr=radio]表现怪异</h3><p>由于重置了一些css样式导致input输入框的样式变成可以复制粘贴，而不是呈点击状态<br>故将css代码贴出来，防止再入坑</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 此代码会导致input单选框怪异模式*/</span></span><br><span class="line"> <span class="selector-tag">input</span><span class="selector-pseudo">:-webkit-user-modify</span><span class="selector-pseudo">:read-write-plaintext-only</span>;</span><br></pre></td></tr></table></figure>
-<h2 id="Sticky-footer-布局"><a href="#Sticky-footer-布局" class="headerlink" title="Sticky footer 布局"></a>Sticky footer 布局</h2><p>App常见布局<a href="https://liuchao0704.github.io/2018/01/06/stickyfooter/">点击查看</a></p>
+<h2 id="Sticky-footer-布局"><a href="#Sticky-footer-布局" class="headerlink" title="Sticky footer 布局"></a>Sticky footer 布局</h2><p>App常见布局<a href="https://liuchao0704.github.io/2018/01/06/stickyfooter/" target="_blank" rel="noopener">点击查看</a></p>
 <h2 id="App单页面切换效果"><a href="#App单页面切换效果" class="headerlink" title="App单页面切换效果"></a>App单页面切换效果</h2><p>SPA加上页面切换效果堪比原生App<a href="https://github.com/liuchao0704/angularWebApp.git" target="_blank" rel="noopener">点击查看</a></p>
 <h2 id="上下左右居中解决方案"><a href="#上下左右居中解决方案" class="headerlink" title="上下左右居中解决方案"></a>上下左右居中解决方案</h2><ul>
 <li>子级宽高固定（多见于loading实现）</li>
@@ -1744,8 +1753,8 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
   <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="string">"chickenEgg"</span>:<span class="string">"egg"</span></span><br></pre></td></tr></table></figure>
 <h3 id="扩展1：input-radio-控制-input的-disable-属性"><a href="#扩展1：input-radio-控制-input的-disable-属性" class="headerlink" title="扩展1：input[radio] 控制 input的 disable 属性"></a>扩展1：input[radio] 控制 input的 disable 属性</h3><p>场景:如果单选框选择true,则只有true对应的输入框属性可以编辑,如果单选框选择false,则只有false对应的输入框属性可以编辑。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">div&gt;</span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-disabled</span>=<span class="string">"formData.chickenEgg == 'egg'"</span> <span class="attr">ng-required</span>=<span class="string">"formData.chickenEgg == 'chicken'"</span> <span class="attr">value</span>=<span class="string">"chicken"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">ng-disabled</span>=<span class="string">"formData.chickenEgg == 'chicken'"</span> <span class="attr">ng-required</span>=<span class="string">"formData.chickenEgg == 'egg'"</span> <span class="attr">value</span>=<span class="string">"egg"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="扩展2：ng-repeat下input-radio-的ng-model"><a href="#扩展2：ng-repeat下input-radio-的ng-model" class="headerlink" title="扩展2：ng-repeat下input[radio]的ng-model"></a>扩展2：ng-repeat下input[radio]的ng-model</h3><p>详见 <a href="https://liuchao0704.github.io/2017/03/09/ngRepeat/">https://liuchao0704.github.io/2017/03/09/ngRepeat/</a></p>
-<h3 id="扩展3：angular动态控制checkbox全选与取消全选"><a href="#扩展3：angular动态控制checkbox全选与取消全选" class="headerlink" title="扩展3：angular动态控制checkbox全选与取消全选"></a>扩展3：angular动态控制checkbox全选与取消全选</h3><p>详见 <a href="https://liuchao0704.github.io/2017/04/10/multiselect/">https://liuchao0704.github.io/2017/04/10/multiselect/</a></p>
+<h3 id="扩展2：ng-repeat下input-radio-的ng-model"><a href="#扩展2：ng-repeat下input-radio-的ng-model" class="headerlink" title="扩展2：ng-repeat下input[radio]的ng-model"></a>扩展2：ng-repeat下input[radio]的ng-model</h3><p>详见 <a href="https://liuchao0704.github.io/2017/03/09/ngRepeat/" target="_blank" rel="noopener">https://liuchao0704.github.io/2017/03/09/ngRepeat/</a></p>
+<h3 id="扩展3：angular动态控制checkbox全选与取消全选"><a href="#扩展3：angular动态控制checkbox全选与取消全选" class="headerlink" title="扩展3：angular动态控制checkbox全选与取消全选"></a>扩展3：angular动态控制checkbox全选与取消全选</h3><p>详见 <a href="https://liuchao0704.github.io/2017/04/10/multiselect/" target="_blank" rel="noopener">https://liuchao0704.github.io/2017/04/10/multiselect/</a></p>
 <h2 id="下拉框-Select-值是动态生成的"><a href="#下拉框-Select-值是动态生成的" class="headerlink" title="下拉框 Select 值是动态生成的"></a>下拉框 Select 值是动态生成的</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">ng-model</span>=<span class="string">"formData.selected"</span> <span class="attr">ng-options</span>=<span class="string">"x.id as x.name for x in users"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>请选择<span class="tag">&lt;/<span class="name">option</span>&gt;</span><span class="comment">&lt;!-- 替换空白--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$scope.users = [</span><br><span class="line">        &#123;<span class="attr">name</span>:<span class="string">'a'</span>,<span class="attr">id</span>:<span class="string">'1'</span>&#125;,</span><br><span class="line">        &#123;<span class="attr">name</span>:<span class="string">'b'</span>,<span class="attr">id</span>:<span class="string">'2'</span>&#125;,</span><br><span class="line">        &#123;<span class="attr">name</span>:<span class="string">'c'</span>,<span class="attr">id</span>:<span class="string">'3'</span>&#125;</span><br><span class="line">    ];</span><br><span class="line">$scope.formData = &#123;</span><br><span class="line">      selected:<span class="string">'2'</span>,</span><br><span class="line">      chickenEgg:<span class="string">'egg'</span></span><br><span class="line">  &#125;;</span><br></pre></td></tr></table></figure>
 <h3 id="提交Form表单"><a href="#提交Form表单" class="headerlink" title="提交Form表单"></a>提交Form表单</h3><hr>
@@ -2074,7 +2083,7 @@ V = (-1)^{s}\times M \times2^{E}</script><ul>
 <h2 id="本地上传到github"><a href="#本地上传到github" class="headerlink" title="本地上传到github"></a>本地上传到github</h2><p>如果你一切都配置好了，发布上传很容易，一句<code>hexo d</code>就搞定，当然关键还是你要把所有东西配置好。首先，ssh key肯定要配置好。其次，配置_config.yml中有关deploy的部分：<br>正确写法：<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:你的名字/你的名字.github.io.git </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
 <p>安装一下插件<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
 <p>最后一步也就是重复之前的操作<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
-<p>成功之后打开 <a href="https://liuchao0704.github.io/">https://liuchao0704.github.io/</a> 即可预览</p>
+<p>成功之后打开 <a href="https://liuchao0704.github.io/" target="_blank" rel="noopener">https://liuchao0704.github.io/</a> 即可预览</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这也是自己第一次摸索了大半天做出来的效果，遇到了一些坑。不过上网发现很多人有用hexo搭建自己的博客，资料很丰富。遇到问题也能及时百度解决之。最后时间关系有些功能没有添加：比如评论留言，比如主题里面 一些个性化配置。有机会一定会抽空改进。</p>
 <p>我参考的资料：<br><a href="http://hetaoo.iteye.com/blog/2323944" target="_blank" rel="noopener">http://hetaoo.iteye.com/blog/2323944</a><br><a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="noopener">http://blog.csdn.net/jzooo/article/details/46781805</a><br><a href="http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a></p>
 ]]></content>
